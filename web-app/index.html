@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FICE fc</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<!--Меню-->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <img id="logo" src="logo.png">
+                    <li class="nav-item"><a href="#">Головна</a></li>
+                    <li class="nav-item"><a href="#league-table">Таблиця</a></li>
+                    <li class="nav-item"><a href="#photo-div">Фото</a></li>
+                    <li class="nav-item"><a href="#squad">Склад</a></li>
+                    <li class="nav-item"><a href="#contact">Контакти</a></li>
+                    <a id="log-in" href="#">Я Адміністратор</a>
+                </ul>
+                <div class="navbar-placeholder"></div>
+            </nav>
+        </header>
+<!--Фото-->
+    <main>
+        <section>
+            <h3 class="centered" >Фото команди</h3>
+            <div id="photo-div">
+                <img class="match-photo" src="./logo.png">
+                <img class="match-photo" src="./fc1.jpg">
+                <img class="match-photo" src="./fc2.jpg">
+                <img class="match-photo" src="./fc3.jpg">
+            </div>
+        </section>
+<!--Таблиця-->
+        <section>
+            <div id="league-table">
+                <h3 class="centered" >Таблиця футбольної ліги</h3>
+                <table>
+                    <tr class="table-header">
+                        <th class="position">Місце</th>
+                        <th>Команда</th>
+                        <th>Зіграно</th>
+                        <th>Перемоги</th>
+                        <th>Нічиї</th>
+                        <th>Поразки</th>
+                        <th>Очки</th>
+                    </tr>
+                    <tr>
+                        <td class="position">1</td>
+                        <td class="team-name">FICE fc</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td class="position">2</td>
+                        <td class="team-name">Not FICE 1</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td class="position">3</td>
+                        <td class="team-name">Not FICE 2</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>19</td>
+                    </tr>           
+                    <tr>
+                        <td class="position">4</td>
+                        <td class="team-name">Not FICE 3</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>18</td>
+                    </tr>            
+                    <tr>
+                        <td class="position">5</td>
+                        <td class="team-name">Not FICE 4</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>17</td>
+                    </tr>            
+                    <tr>
+                        <td class="position">6</td>
+                        <td class="team-name">Not FICE 5</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>0</td>
+                    </tr>            
+                    <tr>
+                        <td class="position">7</td>
+                        <td class="team-name">Not FICE 6</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>0</td>
+                    </tr>            
+                    <tr>
+                        <td class="position">8</td>
+                        <td class="team-name">Not FICE 7</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="position">9</td>
+                        <td class="team-name">Not FICE 8</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>0</td>
+                    </tr>            
+                    <tr>
+                        <td class="position">10</td>
+                        <td class="team-name">Not FICE 9</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>0</td>
+                    </tr>            
+                    <tr>
+                        <td class="position">11</td>
+                        <td class="team-name">Not FICE 10</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+<!-- Форма авторизації -->
+        <section>
+            <div id="blur" class="hidden"></div>
+
+            <form id="login-form" class="form hidden">
+                <h2 class="centered">Увійти як Адміністратор</h2>
+                <br>
+                <label for="password">Пароль</label>
+                <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Введіть пароль"
+                />
+                <button id="submit__login">Увійти</button>
+            </form>
+        </section>
+        <section>
+            <div id="squad" class="centered">
+                <h2 >Склад команди</h2>
+                <ol id="squad-list">
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ol>  
+            </div>
+        </section>
+    </main>
+        <footer id="contact">
+            <div id="contact-container">
+                <a href="descriptionTask1.html" target="_blank">Опис предметного середовища</a>
+                <h4>Наші контакти:</h4>
+                <p>Телефон: +380-0000-000-00</p>
+                <p>Email: fcfice@email.com</p>
+            </div>
+        </footer>
+        
+        <script>
+        let loginBtn = document.querySelector('#log-in');
+        let form = document.querySelector('#login-form');
+        let overlay = document.querySelector('#blur');
+
+        loginBtn.addEventListener('click', function(e){
+            e.preventDefault;
+            form.classList.toggle('hidden');
+            overlay.classList.toggle('hidden');
+        })
+
+        overlay.addEventListener('click', function(e){
+            form.classList.toggle('hidden');
+            overlay.classList.toggle('hidden');
+        })
+    </script>
+    </body>
+</html>
