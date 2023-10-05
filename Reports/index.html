@@ -702,6 +702,7 @@
                             margin-top: 0;
                             text-align: center;
                         }
+                        &lt;h3 class="centered" &gt;Таблиця футбольної ліги&lt;/h3&gt;
                     </pre>
                     <h3 style=" margin-top: 0;
                             text-align: center;
@@ -743,6 +744,63 @@
                         .team-name, .position,  .table-header {
                             font-weight: bold;
                         }
+
+                        &lt;table &gt;
+                        &lt;tr class="table-header"&gt;
+                            &lt;th class="position"&gt;Місце&lt;/th&gt;
+                            &lt;th&gt;Команда&lt;/th&gt;
+                            &lt;th&gt;Зіграно&lt;/th&gt;
+                            &lt;th&gt;Перемоги&lt;/th&gt;
+                            &lt;th&gt;Нічиї&lt;/th&gt;
+                            &lt;th&gt;Поразки&lt;/th&gt;
+                            &lt;th&gt;Очки&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class="position"&gt;1&lt;/td&gt;
+                            &lt;td class="team-name"&gt;FICE fc&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;7&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;23&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class="position"&gt;2&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 1&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;6&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;21&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class="position"&gt;3&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 2&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;4&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;19&lt;/td&gt;
+                        &lt;/tr&gt;           
+                        &lt;tr&gt;
+                            &lt;td class="position"&gt;4&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 3&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;18&lt;/td&gt;
+                        &lt;/tr&gt;            
+                        &lt;tr&gt;
+                            &lt;td class="position"&gt;5&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 4&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;17&lt;/td&gt;
+                        &lt;/tr&gt;            
+                    &lt;/table&gt;
                     </pre>
                     <table >
                         <tr class="table-header">
@@ -816,6 +874,29 @@
                                 padding: 0.3rem;
                                 border-bottom: solid gray 1px;
                             }
+
+                            &lt;ol id="squad-list"&gt;
+                            &lt;li&gt;Player 1&lt;/li&gt;
+                            &lt;li&gt;Player 2&lt;/li&gt;
+                            &lt;li&gt;Player 3&lt;/li&gt;
+                            &lt;li&gt;Player 4&lt;/li&gt;
+                            &lt;li&gt;Player 5&lt;/li&gt;
+                            &lt;li&gt;Player 6&lt;/li&gt;
+                            &lt;li&gt;Player 7&lt;/li&gt;
+                            &lt;li&gt;Player 8&lt;/li&gt;
+                            &lt;li&gt;Player 9&lt;/li&gt;
+                            &lt;li&gt;Player 10&lt;/li&gt;
+                            &lt;li&gt;Player 11&lt;/li&gt;
+                            &lt;li&gt;Player 12&lt;/li&gt;
+                            &lt;li&gt;Player 13&lt;/li&gt;
+                            &lt;li&gt;Player 14&lt;/li&gt;
+                            &lt;li&gt;Player 15&lt;/li&gt;
+                            &lt;li&gt;Player 16&lt;/li&gt;
+                            &lt;li&gt;Player 17&lt;/li&gt;
+                            &lt;li&gt;Player 18&lt;/li&gt;
+                            &lt;li&gt;Player 19&lt;/li&gt;
+                            &lt;li&gt;Player 20&lt;/li&gt;
+                        &lt;/ol&gt;  
                         </pre>
                         <ol id="squad-list">
                             <li>Player 1</li>
@@ -874,6 +955,19 @@
                                 min-width: 5em;
                                 border-radius: 0.8em;
                             }
+
+                            &lt;form id="login-form" class="form-el"&gt;
+                                &lt;h2 class="centered"&gt;Увійти як Адміністратор&lt;/h2&gt;
+                                &lt;br&gt;
+                                &lt;label for="password"&gt;Пароль&lt;/label&gt;
+                                &lt;input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Введіть пароль"
+                                /&gt;
+                                &lt;button id="submit__login"&gt;Увійти&lt;/button&gt;
+                            &lt;/form&gt;
                         </pre>
                         <form id="login-form" class="form-el">
                             <h2 class="centered">Увійти як Адміністратор</h2>
