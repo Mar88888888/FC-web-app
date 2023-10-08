@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Фіксована блокова верстка</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                border-spacing: 0;
+            }
+            header, footer, #header-white-cell{
+                border: solid 2px black;
+            }
+            
+            header, footer{
+                height: 150px;
+                width: 1516px;
+                background-color: yellow;
+            }
+
+            #header-white-cell{
+                background-color: white;
+                width: 500px;
+                height: 60px;
+                margin-left: 30px;
+                margin-top: 41px;
+            }
+            
+            main{
+             height: 1000px;
+             width: 1519px;
+            }
+
+            #left-block{
+                display: flex;
+                float: left;
+                width: 350px;
+                height: 1000px;
+                background-color: blue;
+            }
+            
+            #right-block{
+                display: flex;
+                float: right;
+                width: 950px;
+                height: 850px;
+                padding-top: 74px;
+                padding-bottom: 74px;
+                padding-left: 106px;
+                padding-right: 106px;
+            }
+
+            #red-block{
+                width: 946px;
+                height: 120px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: red;
+            }
+
+            #elem34-section{
+                width: 950px;
+                height: 850px;
+            }
+
+            #block3, #block4{
+                margin-top: 20px;
+                display: flex;
+                width: 460px;
+                height: 705px;
+            }
+
+            #block3{
+                float: left;
+                border: solid 2px rgb(226, 226, 226);
+            }
+
+            #block4{
+                float: right;
+                background-color: blue;
+            }
+
+            #block3-footer{
+                background-color: red;
+                display: block;
+                margin-top: auto;
+                height: 100px;    
+                width: 460px;            
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="header-white-cell">
+                            
+            </div>
+        </header>
+        <main>
+                <div id="left-block">
+                </div>
+                <div id="right-block">
+                    <div id="elem34-section">
+                        <div id="red-block">
+                        </div>      
+                        <span id="block3">
+                            <span id="block3-footer"></span>
+                        </span>
+                        <span id="block4">
+                        </span>
+                    </div>
+                </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

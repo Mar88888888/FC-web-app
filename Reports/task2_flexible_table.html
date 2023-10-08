@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Гумова таблична верстка</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                border-spacing: 0;
+            }
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+            /* body {
+                min-height: 1000px;
+            } */
+            td {
+                border: solid 2px black;
+            }
+            #page {
+                height: 100%;
+                width: 100%;
+            }
+
+            .yellow{
+                background-color: yellow;
+            }
+
+            .blue{
+                background-color: blue;
+            }
+
+            #footer-cell, #header-cell{
+                height: 15%;
+            }
+            #header-inner-table{
+                height: 100%;
+                width: 40%;
+                padding: 2%;
+            }
+
+            #header-white-cell{
+                background-color: white;
+            }
+
+            #inner-table{
+                height: 100%;
+                width: 100%;
+                border-spacing: 0.6em;
+            }
+            #elem34-section{
+                padding: 2%;
+                width: 75%;
+            }
+
+            #red-block{
+                background-color: red;
+                height: 15%;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="page">
+            <tr id="header">
+                <td colspan="2" id="header-cell" class="yellow">
+                    <table id="header-inner-table">
+                        <tr>
+                            <td id="header-white-cell">
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="main">
+                <td id="left-block" class="blue">
+
+                </td>
+                <td id="elem34-section">
+                    <table id="inner-table">
+                        <tr>
+                            <td colspan="2" id="red-block">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="block3">
+
+                            </td>
+                            <td id="block4" class="blue">
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="footer-row" >
+                <td colspan="2" id="footer-cell" class="yellow">
+    
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -174,13 +174,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="id lab2 menu-btn">              
-                                    Селектори ідентифікаторів
+                                <a href="#" class="fixed-block lab2 menu-btn">              
+                                    Фіксована блокова верстка
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="other lab2 menu-btn">              
-                                   Інші селектори
+                                <a href="#" class="flexible-block lab2 menu-btn">              
+                                   Гумова блокова верстка
                                 </a>
                             </li>
 
@@ -1353,81 +1353,240 @@
                         </pre>                        
                         <img src="./fixed_table.png" width="100%"> 
                     </span>                               
-                    <span id="task2_2" class="flexible-table lab1 info-element hidden">
+                    <span id="task2_2" class="flexible-table lab3 info-element hidden">
                         <pre>
-                            &lt;form id="login-form" class="form hidden"&gt;
-                            &lt;h2 class="centered"&gt;Увійти як Адміністратор&lt;/h2&gt;
-                            &lt;br&gt;
-                            &lt;label for="password"&gt;Пароль&lt;/label&gt;
-                            &lt;input type="password" id="password" name="password"
-                            placeholder="Введіть пароль"
-                            /&gt;
-                            &lt;button id="submit__login"&gt;Увійти&lt;/button&gt;
-                            &lt;/form&gt;
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Гумова таблична верстка&lt;/title&gt;
+                                    &lt;style&gt;
+                                        * {
+                                            margin: 0;
+                                            padding: 0;
+                                            border: 0;
+                                            border-spacing: 0;
+                                        }
+                                        html, body {
+                                            height: 100%;
+                                            width: 100%;
+                                        }
+                                        /* body {
+                                            min-height: 1000px;
+                                        } */
+                                        td {
+                                            border: solid 2px black;
+                                        }
+                                        #page {
+                                            height: 100%;
+                                            width: 100%;
+                                        }
+
+                                        .yellow{
+                                            background-color: yellow;
+                                        }
+
+                                        .blue{
+                                            background-color: blue;
+                                        }
+
+                                        #footer-cell, #header-cell{
+                                            height: 15%;
+                                        }
+                                        #header-inner-table{
+                                            height: 100%;
+                                            width: 40%;
+                                            padding: 2%;
+                                        }
+
+                                        #header-white-cell{
+                                            background-color: white;
+                                        }
+
+                                        #inner-table{
+                                            height: 100%;
+                                            width: 100%;
+                                            border-spacing: 0.6em;
+                                        }
+                                        #elem34-section{
+                                            padding: 2%;
+                                            width: 75%;
+                                        }
+
+                                        #red-block{
+                                            background-color: red;
+                                            height: 15%;
+                                        }
+                                    &lt;/style&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table id="page"&gt;
+                                        &lt;tr id="header"&gt;
+                                            &lt;td colspan="2" id="header-cell" class="yellow"&gt;
+                                                &lt;table id="header-inner-table"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td id="header-white-cell"&gt;
+
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/table&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr id="main"&gt;
+                                            &lt;td id="left-block" class="blue"&gt;
+
+                                            &lt;/td&gt;
+                                            &lt;td id="elem34-section"&gt;
+                                                &lt;table id="inner-table"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td colspan="2" id="red-block"&gt;
+
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td id="block3"&gt;
+
+                                                        &lt;/td&gt;
+                                                        &lt;td id="block4" class="blue"&gt;
+
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/table&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr id="footer-row" &gt;
+                                            &lt;td colspan="2" id="footer-cell" class="yellow"&gt;
+                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
                         </pre>                        
-                        <form id="login-form" class="form-el">
-                            <h2 class="centered">Увійти як Адміністратор</h2>
-                            <br>
-                            <label for="password">Пароль</label>
-                            <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Введіть пароль"
-                            />
-                            <button id="submit__login">Увійти</button>
-                        </form>
+                        <img src="./flexible_table.png" width="100%">
                     </span>
-                    <span id="list" class="list lab1 info-element hidden">
+                    <span id="task2_3" class="fixed_table lab3 info-element hidden">
                         <pre>
-                            &lt;ol id="squad-list"&gt;
-                                &lt;li&gt;Player 1&lt;/li&gt;
-                                &lt;li&gt;Player 2&lt;/li&gt;
-                                &lt;li&gt;Player 3&lt;/li&gt;
-                                &lt;li&gt;Player 4&lt;/li&gt;
-                                &lt;li&gt;Player 5&lt;/li&gt;
-                                &lt;li&gt;Player 6&lt;/li&gt;
-                                &lt;li&gt;Player 7&lt;/li&gt;
-                                &lt;li&gt;Player 8&lt;/li&gt;
-                                &lt;li&gt;Player 9&lt;/li&gt;
-                                &lt;li&gt;Player 10&lt;/li&gt;
-                                &lt;li&gt;Player 11&lt;/li&gt;
-                                &lt;li&gt;Player 12&lt;/li&gt;
-                                &lt;li&gt;Player 13&lt;/li&gt;
-                                &lt;li&gt;Player 14&lt;/li&gt;
-                                &lt;li&gt;Player 15&lt;/li&gt;
-                                &lt;li&gt;Player 16&lt;/li&gt;
-                                &lt;li&gt;Player 17&lt;/li&gt;
-                                &lt;li&gt;Player 18&lt;/li&gt;
-                                &lt;li&gt;Player 19&lt;/li&gt;
-                                &lt;li&gt;Player 20&lt;/li&gt;
-                            &lt;/ol&gt; 
-                        </pre>                        
-                        <ol id="squad-list">
-                            <li>Player 1</li>
-                            <li>Player 2</li>
-                            <li>Player 3</li>
-                            <li>Player 4</li>
-                            <li>Player 5</li>
-                            <li>Player 6</li>
-                            <li>Player 7</li>
-                            <li>Player 8</li>
-                            <li>Player 9</li>
-                            <li>Player 10</li>
-                            <li>Player 11</li>
-                            <li>Player 12</li>
-                            <li>Player 13</li>
-                            <li>Player 14</li>
-                            <li>Player 15</li>
-                            <li>Player 16</li>
-                            <li>Player 17</li>
-                            <li>Player 18</li>
-                            <li>Player 19</li>
-                            <li>Player 20</li>
-                        </ol>  
-            
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Фіксована блокова верстка&lt;/title&gt;
+                                    &lt;style&gt;
+                                        *{
+                                            margin: 0;
+                                            padding: 0;
+                                            border: 0;
+                                            border-spacing: 0;
+                                        }
+                                        header, footer, #header-white-cell{
+                                            border: solid 2px black;
+                                        }
+                                        
+                                        header, footer{
+                                            height: 150px;
+                                            width: 1516px;
+                                            background-color: yellow;
+                                        }
+
+                                        #header-white-cell{
+                                            background-color: white;
+                                            width: 500px;
+                                            height: 60px;
+                                            margin-left: 30px;
+                                            margin-top: 41px;
+                                        }
+                                        
+                                        main{
+                                        height: 1000px;
+                                        width: 1519px;
+                                        }
+
+                                        #left-block{
+                                            display: flex;
+                                            float: left;
+                                            width: 350px;
+                                            height: 1000px;
+                                            background-color: blue;
+                                        }
+                                        
+                                        #right-block{
+                                            display: flex;
+                                            float: right;
+                                            width: 950px;
+                                            height: 850px;
+                                            padding-top: 74px;
+                                            padding-bottom: 74px;
+                                            padding-left: 106px;
+                                            padding-right: 106px;
+                                        }
+
+                                        #red-block{
+                                            width: 946px;
+                                            height: 120px;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            background-color: red;
+                                        }
+
+                                        #elem34-section{
+                                            width: 950px;
+                                            height: 850px;
+                                        }
+
+                                        #block3, #block4{
+                                            margin-top: 20px;
+                                            display: flex;
+                                            width: 460px;
+                                            height: 705px;
+                                        }
+
+                                        #block3{
+                                            float: left;
+                                            border: solid 2px rgb(226, 226, 226);
+                                        }
+
+                                        #block4{
+                                            float: right;
+                                            background-color: blue;
+                                        }
+
+                                        #block3-footer{
+                                            background-color: red;
+                                            display: block;
+                                            margin-top: auto;
+                                            height: 100px;    
+                                            width: 460px;            
+                                        }
+                                    &lt;/style&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;header&gt;
+                                        &lt;div id="header-white-cell"&gt;
+                                                        
+                                        &lt;/div&gt;
+                                    &lt;/header&gt;
+                                    &lt;main&gt;
+                                            &lt;div id="left-block"&gt;
+                                            &lt;/div&gt;
+                                            &lt;div id="right-block"&gt;
+                                                &lt;div id="elem34-section"&gt;
+                                                    &lt;div id="red-block"&gt;
+                                                    &lt;/div&gt;      
+                                                    &lt;span id="block3"&gt;
+                                                        &lt;span id="block3-footer"&gt;&lt;/span&gt;
+                                                    &lt;/span&gt;
+                                                    &lt;span id="block4"&gt;
+                                                    &lt;/span&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                    &lt;/main&gt;
+                                    &lt;footer&gt;
+                                    &lt;/footer&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>                         
+                        <img src="./fixed_block.png" width="100%">
                     </span>  
-                    <span id="link" class="link lab1 info-element hidden">
+                    <span id="task2_4" class="flexible-block lab3 info-element hidden">
                         <pre>
                             &lt;a id="log-in" href="#"&gt;Я Адміністратор&lt;/a&gt;
                             &lt;li class="nav-item"&gt;&lt;a href="#"&gt;Головна&lt;/a&gt;&lt;/li&gt;
@@ -1437,13 +1596,6 @@
                             &lt;li class="nav-item"&gt;&lt;a href="#contact"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
                             &lt;a href="descriptionTask1.html" target="_blank"&gt;Опис предметної галузі&lt;/a&gt;
                         </pre>                      
-                        <a id="log-in" href="#">Я Адміністратор</a>  
-                        <li class="nav-item"><a href="#">Головна</a></li>
-                        <li class="nav-item"><a href="#league-table">Таблиця</a></li>
-                        <li class="nav-item"><a href="#photo-div">Фото</a></li>
-                        <li class="nav-item"><a href="#squad">Склад</a></li>
-                        <li class="nav-item"><a href="#contact">Контакти</a></li>
-                        <a href="descriptionTask1.html" target="_blank">Опис предметної галузі</a>
                     </span>                       
                     <span id="conclusion" class="conclusion lab1 info-element hidden">
                     <h2 class="center">Висновки</h2>
