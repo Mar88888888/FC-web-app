@@ -222,3 +222,7 @@ li.nav-item a:hover {
 h6 + p{
     color: blue;
  }
+
+.main-page-img{
+    width: 100%;
+}

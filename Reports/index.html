@@ -145,6 +145,58 @@
                         </a>
                     </li>
                 </ul>
+                <ul id="menu-lab3" class="menu-lab hidden" lab="3">
+                    <li>
+                        <a href="#" class="theme lab3 menu-btn">              
+                            Тема Мета Місце розташування лаби №3, звіту
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="task1 lab3 menu-btn">              
+                            ЗАВДАННЯ №1<br>
+                            Зовнішній вигляд макету, код макету 
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <p class="menu-no-click" item = "" lab="3">              
+                            ЗАВДАННЯ №2
+                        </p>
+                        <ul lab="3">
+                            <li>
+                                <a href="#" class="fixed-table lab3 menu-btn">              
+                                   Фіксована таблична верстка
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flexible-table lab3 menu-btn">              
+                                    Гумова таблична верстка
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="id lab2 menu-btn">              
+                                    Селектори ідентифікаторів
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="other lab2 menu-btn">              
+                                   Інші селектори
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="elements lab2 menu-btn">              
+                            CSS: Шрифти, Текст, таблиці, фон, контур, списки, CSS просунутий
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#" class="conclusion lab3 menu-btn">              
+                            Висновки
+                        </a>
+                    </li>
+                </ul>
             </span>
 
 
@@ -404,22 +456,22 @@
                     </span> 
                 </span>
                 <span id="content-lab2">
-                    <span id="theme" class="theme lab2 info-element hidden">
+                    <span id="theme2" class="theme lab2 info-element hidden">
                         <h2 class="centered">Тема: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ
                             ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.
-                           </h2>
+                        </h2>
                         
                         <p> Мета: придбати практичні навички роботи з селекторами, ідентифікаторами,
                             списками, різноманітними властивостями кольору і фону, зовнішними та
                             внутрішними відступами, плаваючими елементами, оформленням текстових
                             елементів</p>
-
-                        <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
-                    </span>
-                    <span id="link-methods" class="link-methods lab2  info-element hidden">
-                        <h2>Підключення зовнішнього файлу</h2>
-                        <pre>
-                            &lt;link rel="stylesheet" href="style.css"&gt;                       
+                            
+                            <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
+                        </span>
+                        <span id="link-methods" class="link-methods lab2  info-element hidden">
+                            <h2>Підключення зовнішнього файлу</h2>
+                            <pre>
+                                &lt;link rel="stylesheet" href="style.css"&gt;                       
                         </pre>
                         <h2>Використання атрибуту style</h2>
                         <pre>
@@ -428,12 +480,12 @@
                         <h2>Використання тегу style</h2>
                         <pre>
                             &lt;style&gt;
-                                html{
+                            html{
                                 background-color: white;
-                                }
+                            }
                             &lt;/style&gt;                       
                         </pre>
-
+                        
                     </span>
                     <span id="tag" class="tag lab2 info-element hidden">
                         <pre>
@@ -442,78 +494,78 @@
                                 border-collapse: collapse;
                                 margin: 20px auto;
                             }
-                
+                            
                             th, td {
                                 border: 1px solid #ddd;
                                 padding: 8px;
                                 text-align: left;
                             }
-                
+                            
                             th {
                                 background-color: #f2f2f2;
                             }
                             
 
                             &lt;table &gt;
-                                &lt;tr class="table-header"&gt;
-                                    &lt;th class="position"&gt;Місце&lt;/th&gt;
-                                    &lt;th&gt;Команда&lt;/th&gt;
-                                    &lt;th&gt;Зіграно&lt;/th&gt;
-                                    &lt;th&gt;Перемоги&lt;/th&gt;
-                                    &lt;th&gt;Нічиї&lt;/th&gt;
-                                    &lt;th&gt;Поразки&lt;/th&gt;
-                                    &lt;th&gt;Очки&lt;/th&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;1&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;FICE fc&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;7&lt;/td&gt;
-                                    &lt;td&gt;2&lt;/td&gt;
-                                    &lt;td&gt;1&lt;/td&gt;
-                                    &lt;td&gt;23&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;2&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 1&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;6&lt;/td&gt;
-                                    &lt;td&gt;3&lt;/td&gt;
-                                    &lt;td&gt;1&lt;/td&gt;
-                                    &lt;td&gt;21&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;3&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 2&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;5&lt;/td&gt;
-                                    &lt;td&gt;4&lt;/td&gt;
-                                    &lt;td&gt;1&lt;/td&gt;
-                                    &lt;td&gt;19&lt;/td&gt;
-                                &lt;/tr&gt;           
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;4&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 3&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;5&lt;/td&gt;
-                                    &lt;td&gt;3&lt;/td&gt;
-                                    &lt;td&gt;2&lt;/td&gt;
-                                    &lt;td&gt;18&lt;/td&gt;
-                                &lt;/tr&gt;            
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;5&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 4&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;5&lt;/td&gt;
-                                    &lt;td&gt;2&lt;/td&gt;
-                                    &lt;td&gt;3&lt;/td&gt;
-                                    &lt;td&gt;17&lt;/td&gt;
-                                &lt;/tr&gt;            
+                            &lt;tr class="table-header"&gt;
+                            &lt;th class="position"&gt;Місце&lt;/th&gt;
+                            &lt;th&gt;Команда&lt;/th&gt;
+                            &lt;th&gt;Зіграно&lt;/th&gt;
+                            &lt;th&gt;Перемоги&lt;/th&gt;
+                            &lt;th&gt;Нічиї&lt;/th&gt;
+                            &lt;th&gt;Поразки&lt;/th&gt;
+                            &lt;th&gt;Очки&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;1&lt;/td&gt;
+                            &lt;td class="team-name"&gt;FICE fc&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;7&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;23&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;2&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 1&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;6&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;21&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;3&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 2&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;4&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;19&lt;/td&gt;
+                            &lt;/tr&gt;           
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;4&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 3&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;18&lt;/td&gt;
+                            &lt;/tr&gt;            
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;5&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 4&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;17&lt;/td&gt;
+                            &lt;/tr&gt;            
                             &lt;/table&gt;
                         </pre>                        
-                            <table >
-                                <tr class="table-header">
-                                    <th class="position">Місце</th>
+                        <table >
+                            <tr class="table-header">
+                                <th class="position">Місце</th>
                                     <th>Команда</th>
                                     <th>Зіграно</th>
                                     <th>Перемоги</th>
@@ -567,15 +619,15 @@
                                     <td>17</td>
                                 </tr>            
                             </table>
-                    </span>                               
-                    <span id="class" class="class lab2 info-element hidden">
-                        <pre>
+                        </span>                               
+                        <span id="class" class="class lab2 info-element hidden">
+                            <pre>
                             .match-photo{
                                 max-width: 22%;
                                 display: inline;
-                            
+                                
                             }
-
+                            
                             &lt;img class="match-photo" src="./logo.png"&gt;
                             &lt;img class="match-photo" src="./fc1.jpg"&gt;
                             &lt;img class="match-photo" src="./fc2.jpg"&gt;
@@ -599,10 +651,10 @@
                                 padding-bottom: 1rem;
                                 border-radius: 10px;
                             }
-
+                            
                             &lt;ol id="squad-list"&gt;
-                                &lt;li&gt;Player 1&lt;/li&gt;
-                                &lt;li&gt;Player 2&lt;/li&gt;
+                            &lt;li&gt;Player 1&lt;/li&gt;
+                            &lt;li&gt;Player 2&lt;/li&gt;
                                 &lt;li&gt;Player 3&lt;/li&gt;
                                 &lt;li&gt;Player 4&lt;/li&gt;
                                 &lt;li&gt;Player 5&lt;/li&gt;
@@ -621,9 +673,9 @@
                                 &lt;li&gt;Player 18&lt;/li&gt;
                                 &lt;li&gt;Player 19&lt;/li&gt;
                                 &lt;li&gt;Player 20&lt;/li&gt;
-                            &lt;/ol&gt;  
-                        </pre>                        
-                        <ol id="squad-list">
+                                &lt;/ol&gt;  
+                            </pre>                        
+                            <ol id="squad-list">
                             <li>Player 1</li>
                             <li>Player 2</li>
                             <li>Player 3</li>
@@ -645,7 +697,7 @@
                             <li>Player 19</li>
                             <li>Player 20</li>
                         </ol>  
-
+                        
                     </span>  
                     <span id="other" class="other lab2 info-element hidden">
                         <h2>Універсальний селектор</h2>
@@ -657,7 +709,7 @@
                         <h2>Сусідський селектор</h2>
                         <pre>
                             h6 + p{
-                               color: blue;
+                                color: blue;
                             }
                             &lt;h6&gt;Сайт футбольного клубу&lt;/h6&gt;
                             &lt;p&gt;Приходь на стадіон щоб підтримати команду!&lt;/p&gt;
@@ -682,118 +734,118 @@
                         <li class="nav-item"><a href="#photo-div">Фото</a></li>
                         <li class="nav-item"><a href="#squad">Склад</a></li>
                         <li class="nav-item"><a href="#contact">Контакти</a></li>
-
-
+                        
+                        
                         <h2>Cелектор структурного псевдокласу</h2>
                         <pre>
                             tr:nth-child(even) {
                                 background-color: #f2f2f2;
                             }
-                        
-                        &lt;table &gt;
-                                &lt;tr class="table-header"&gt;
-                                    &lt;th class="position"&gt;Місце&lt;/th&gt;
-                                    &lt;th&gt;Команда&lt;/th&gt;
-                                    &lt;th&gt;Зіграно&lt;/th&gt;
-                                    &lt;th&gt;Перемоги&lt;/th&gt;
-                                    &lt;th&gt;Нічиї&lt;/th&gt;
-                                    &lt;th&gt;Поразки&lt;/th&gt;
-                                    &lt;th&gt;Очки&lt;/th&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;1&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;FICE fc&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;7&lt;/td&gt;
-                                    &lt;td&gt;2&lt;/td&gt;
-                                    &lt;td&gt;1&lt;/td&gt;
-                                    &lt;td&gt;23&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;2&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 1&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;6&lt;/td&gt;
-                                    &lt;td&gt;3&lt;/td&gt;
-                                    &lt;td&gt;1&lt;/td&gt;
-                                    &lt;td&gt;21&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;3&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 2&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;5&lt;/td&gt;
-                                    &lt;td&gt;4&lt;/td&gt;
-                                    &lt;td&gt;1&lt;/td&gt;
-                                    &lt;td&gt;19&lt;/td&gt;
-                                &lt;/tr&gt;           
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;4&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 3&lt;/td&gt;
-                                    &lt;td&gt;10&lt;/td&gt;
-                                    &lt;td&gt;5&lt;/td&gt;
-                                    &lt;td&gt;3&lt;/td&gt;
-                                    &lt;td&gt;2&lt;/td&gt;
-                                    &lt;td&gt;18&lt;/td&gt;
-                                &lt;/tr&gt;            
-                                &lt;tr&gt;
-                                    &lt;td class="position"&gt;5&lt;/td&gt;
-                                    &lt;td class="team-name"&gt;Not FICE 4&lt;/td&gt;
+                            
+                            &lt;table &gt;
+                            &lt;tr class="table-header"&gt;
+                            &lt;th class="position"&gt;Місце&lt;/th&gt;
+                            &lt;th&gt;Команда&lt;/th&gt;
+                            &lt;th&gt;Зіграно&lt;/th&gt;
+                            &lt;th&gt;Перемоги&lt;/th&gt;
+                            &lt;th&gt;Нічиї&lt;/th&gt;
+                            &lt;th&gt;Поразки&lt;/th&gt;
+                            &lt;th&gt;Очки&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;1&lt;/td&gt;
+                            &lt;td class="team-name"&gt;FICE fc&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;7&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;23&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;2&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 1&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;6&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;21&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;3&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 2&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;4&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;19&lt;/td&gt;
+                            &lt;/tr&gt;           
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;4&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 3&lt;/td&gt;
+                            &lt;td&gt;10&lt;/td&gt;
+                            &lt;td&gt;5&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;18&lt;/td&gt;
+                            &lt;/tr&gt;            
+                            &lt;tr&gt;
+                            &lt;td class="position"&gt;5&lt;/td&gt;
+                            &lt;td class="team-name"&gt;Not FICE 4&lt;/td&gt;
                                     &lt;td&gt;10&lt;/td&gt;
                                     &lt;td&gt;5&lt;/td&gt;
                                     &lt;td&gt;2&lt;/td&gt;
                                     &lt;td&gt;3&lt;/td&gt;
                                     &lt;td&gt;17&lt;/td&gt;
-                                &lt;/tr&gt;            
-                            &lt;/table&gt;
-                        </pre>                        
-                            <table >
-                                <tr class="table-header">
-                                    <th class="position">Місце</th>
-                                    <th>Команда</th>
-                                    <th>Зіграно</th>
-                                    <th>Перемоги</th>
-                                    <th>Нічиї</th>
-                                    <th>Поразки</th>
-                                    <th>Очки</th>
-                                </tr>
-                                <tr>
-                                    <td class="position">1</td>
-                                    <td class="team-name">FICE fc</td>
-                                    <td>10</td>
-                                    <td>7</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>23</td>
-                                </tr>
-                                <tr>
-                                    <td class="position">2</td>
-                                    <td class="team-name">Not FICE 1</td>
-                                    <td>10</td>
-                                    <td>6</td>
-                                    <td>3</td>
-                                    <td>1</td>
-                                    <td>21</td>
-                                </tr>
-                                <tr>
-                                    <td class="position">3</td>
-                                    <td class="team-name">Not FICE 2</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>4</td>
-                                    <td>1</td>
-                                    <td>19</td>
-                                </tr>           
-                                <tr>
-                                    <td class="position">4</td>
-                                    <td class="team-name">Not FICE 3</td>
-                                    <td>10</td>
-                                    <td>5</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>18</td>
-                                </tr>            
-                                <tr>
+                                    &lt;/tr&gt;            
+                                    &lt;/table&gt;
+                                </pre>                        
+                                <table >
+                                    <tr class="table-header">
+                                        <th class="position">Місце</th>
+                                        <th>Команда</th>
+                                        <th>Зіграно</th>
+                                        <th>Перемоги</th>
+                                        <th>Нічиї</th>
+                                        <th>Поразки</th>
+                                        <th>Очки</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="position">1</td>
+                                        <td class="team-name">FICE fc</td>
+                                        <td>10</td>
+                                        <td>7</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="position">2</td>
+                                        <td class="team-name">Not FICE 1</td>
+                                        <td>10</td>
+                                        <td>6</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="position">3</td>
+                                        <td class="team-name">Not FICE 2</td>
+                                        <td>10</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>1</td>
+                                        <td>19</td>
+                                    </tr>           
+                                    <tr>
+                                        <td class="position">4</td>
+                                        <td class="team-name">Not FICE 3</td>
+                                        <td>10</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>18</td>
+                                    </tr>            
+                                    <tr>
                                     <td class="position">5</td>
                                     <td class="team-name">Not FICE 4</td>
                                     <td>10</td>
@@ -803,9 +855,9 @@
                                     <td>17</td>
                                 </tr>            
                             </table>
-                        <h2>Дочірній тег, вибор тегу за атрибутом</h2>
-                        <pre>
-                            #login-form &gt; input[type="text"],
+                            <h2>Дочірній тег, вибор тегу за атрибутом</h2>
+                            <pre>
+                                #login-form &gt; input[type="text"],
                                 input[type="password"] {
                                     width: 90%;
                                     padding: 20px;
@@ -813,15 +865,15 @@
                                     border: none;
                                     border-radius: 0.5em;
                                     background-color: #f1f1f1;
-                            }
-
+                                }
+                                
                             &lt;form id="login-form" class="form-el"&gt;
-                                &lt;h2 class="centered"&gt;Увійти як Адміністратор&lt;/h2&gt;
-                                &lt;br&gt;
-                                &lt;label for="password"&gt;Пароль&lt;/label&gt;
-                                &lt;input
-                                type="password"
-                                id="password"
+                            &lt;h2 class="centered"&gt;Увійти як Адміністратор&lt;/h2&gt;
+                            &lt;br&gt;
+                            &lt;label for="password"&gt;Пароль&lt;/label&gt;
+                            &lt;input
+                            type="password"
+                            id="password"
                                 name="password"
                                 placeholder="Введіть пароль"
                                 /&gt;
@@ -842,24 +894,24 @@
                         </form>
                     </span>                       
                     <span id="elements" class="elements lab2 info-element hidden">
-                    <h2 class="center">Елементи</h2>
-                    <h3 class="center">Шрифти</h3>
-                    <pre>
-                        html{
-                            background-color: rgb(227, 229, 251);
-                            font-family: font-family: Comic Sans MS, Comic Sans, cursive;
-                        }
-                    </pre>
-                    <p style="font-family: Comic Sans MS, Comic Sans, cursive; background-color: rgb(227, 229, 251);">Cайт футбольного клубу fice</p>
-                    <h3 class="center">Текст</h3>
-                    <pre>
-                        .centered{
-                            margin-top: 0;
-                            text-align: center;
-                        }
-                        &lt;h3 class="centered" &gt;Таблиця футбольної ліги&lt;/h3&gt;
-                    </pre>
-                    <h3 style=" margin-top: 0;
+                        <h2 class="center">Елементи</h2>
+                        <h3 class="center">Шрифти</h3>
+                        <pre>
+                            html{
+                                background-color: rgb(227, 229, 251);
+                                font-family: font-family: Comic Sans MS, Comic Sans, cursive;
+                            }
+                        </pre>
+                        <p style="font-family: Comic Sans MS, Comic Sans, cursive; background-color: rgb(227, 229, 251);">Cайт футбольного клубу fice</p>
+                        <h3 class="center">Текст</h3>
+                        <pre>
+                            .centered{
+                                margin-top: 0;
+                                text-align: center;
+                            }
+                            &lt;h3 class="centered" &gt;Таблиця футбольної ліги&lt;/h3&gt;
+                        </pre>
+                        <h3 style=" margin-top: 0;
                             text-align: center;
                             background-color: rgb(227, 229, 251);" >Таблиця футбольної ліги</h3>
                     <h3 class="center">Фон</h3>
@@ -899,34 +951,34 @@
                         .team-name, .position,  .table-header {
                             font-weight: bold;
                         }
-
+                        
                         &lt;table &gt;
                         &lt;tr class="table-header"&gt;
-                            &lt;th class="position"&gt;Місце&lt;/th&gt;
-                            &lt;th&gt;Команда&lt;/th&gt;
-                            &lt;th&gt;Зіграно&lt;/th&gt;
-                            &lt;th&gt;Перемоги&lt;/th&gt;
-                            &lt;th&gt;Нічиї&lt;/th&gt;
-                            &lt;th&gt;Поразки&lt;/th&gt;
-                            &lt;th&gt;Очки&lt;/th&gt;
+                        &lt;th class="position"&gt;Місце&lt;/th&gt;
+                        &lt;th&gt;Команда&lt;/th&gt;
+                        &lt;th&gt;Зіграно&lt;/th&gt;
+                        &lt;th&gt;Перемоги&lt;/th&gt;
+                        &lt;th&gt;Нічиї&lt;/th&gt;
+                        &lt;th&gt;Поразки&lt;/th&gt;
+                        &lt;th&gt;Очки&lt;/th&gt;
                         &lt;/tr&gt;
                         &lt;tr&gt;
-                            &lt;td class="position"&gt;1&lt;/td&gt;
-                            &lt;td class="team-name"&gt;FICE fc&lt;/td&gt;
-                            &lt;td&gt;10&lt;/td&gt;
-                            &lt;td&gt;7&lt;/td&gt;
-                            &lt;td&gt;2&lt;/td&gt;
-                            &lt;td&gt;1&lt;/td&gt;
-                            &lt;td&gt;23&lt;/td&gt;
+                        &lt;td class="position"&gt;1&lt;/td&gt;
+                        &lt;td class="team-name"&gt;FICE fc&lt;/td&gt;
+                        &lt;td&gt;10&lt;/td&gt;
+                        &lt;td&gt;7&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;23&lt;/td&gt;
                         &lt;/tr&gt;
                         &lt;tr&gt;
-                            &lt;td class="position"&gt;2&lt;/td&gt;
-                            &lt;td class="team-name"&gt;Not FICE 1&lt;/td&gt;
-                            &lt;td&gt;10&lt;/td&gt;
-                            &lt;td&gt;6&lt;/td&gt;
-                            &lt;td&gt;3&lt;/td&gt;
-                            &lt;td&gt;1&lt;/td&gt;
-                            &lt;td&gt;21&lt;/td&gt;
+                        &lt;td class="position"&gt;2&lt;/td&gt;
+                        &lt;td class="team-name"&gt;Not FICE 1&lt;/td&gt;
+                        &lt;td&gt;10&lt;/td&gt;
+                        &lt;td&gt;6&lt;/td&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;21&lt;/td&gt;
                         &lt;/tr&gt;
                         &lt;tr&gt;
                             &lt;td class="position"&gt;3&lt;/td&gt;
@@ -936,8 +988,8 @@
                             &lt;td&gt;4&lt;/td&gt;
                             &lt;td&gt;1&lt;/td&gt;
                             &lt;td&gt;19&lt;/td&gt;
-                        &lt;/tr&gt;           
-                        &lt;tr&gt;
+                            &lt;/tr&gt;           
+                            &lt;tr&gt;
                             &lt;td class="position"&gt;4&lt;/td&gt;
                             &lt;td class="team-name"&gt;Not FICE 3&lt;/td&gt;
                             &lt;td&gt;10&lt;/td&gt;
@@ -945,8 +997,8 @@
                             &lt;td&gt;3&lt;/td&gt;
                             &lt;td&gt;2&lt;/td&gt;
                             &lt;td&gt;18&lt;/td&gt;
-                        &lt;/tr&gt;            
-                        &lt;tr&gt;
+                            &lt;/tr&gt;            
+                            &lt;tr&gt;
                             &lt;td class="position"&gt;5&lt;/td&gt;
                             &lt;td class="team-name"&gt;Not FICE 4&lt;/td&gt;
                             &lt;td&gt;10&lt;/td&gt;
@@ -954,10 +1006,10 @@
                             &lt;td&gt;2&lt;/td&gt;
                             &lt;td&gt;3&lt;/td&gt;
                             &lt;td&gt;17&lt;/td&gt;
-                        &lt;/tr&gt;            
-                    &lt;/table&gt;
-                    </pre>
-                    <table >
+                            &lt;/tr&gt;            
+                            &lt;/table&gt;
+                        </pre>
+                        <table >
                         <tr class="table-header">
                             <th class="position">Місце</th>
                             <th>Команда</th>
@@ -968,35 +1020,35 @@
                             <th>Очки</th>
                         </tr>
                         <tr>
-                                <td class="position">1</td>
-                                <td class="team-name">FICE fc</td>
-                                <td>10</td>
-                                <td>7</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>23</td>
-                            </tr>
-                            <tr>
-                                <td class="position">2</td>
-                                <td class="team-name">Not FICE 1</td>
-                                <td>10</td>
-                                <td>6</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>21</td>
-                            </tr>
-                            <tr>
-                                <td class="position">3</td>
-                                <td class="team-name">Not FICE 2</td>
-                                <td>10</td>
-                                <td>5</td>
-                                <td>4</td>
-                                <td>1</td>
-                                <td>19</td>
-                            </tr>           
-                            <tr>
-                                <td class="position">4</td>
-                                <td class="team-name">Not FICE 3</td>
+                            <td class="position">1</td>
+                            <td class="team-name">FICE fc</td>
+                            <td>10</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td class="position">2</td>
+                            <td class="team-name">Not FICE 1</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td class="position">3</td>
+                            <td class="team-name">Not FICE 2</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>19</td>
+                        </tr>           
+                        <tr>
+                            <td class="position">4</td>
+                            <td class="team-name">Not FICE 3</td>
                                 <td>10</td>
                                 <td>5</td>
                                 <td>3</td>
@@ -1029,7 +1081,7 @@
                                 padding: 0.3rem;
                                 border-bottom: solid gray 1px;
                             }
-
+                            
                             &lt;ol id="squad-list"&gt;
                             &lt;li&gt;Player 1&lt;/li&gt;
                             &lt;li&gt;Player 2&lt;/li&gt;
@@ -1051,7 +1103,7 @@
                             &lt;li&gt;Player 18&lt;/li&gt;
                             &lt;li&gt;Player 19&lt;/li&gt;
                             &lt;li&gt;Player 20&lt;/li&gt;
-                        &lt;/ol&gt;  
+                            &lt;/ol&gt;  
                         </pre>
                         <ol id="squad-list">
                             <li>Player 1</li>
@@ -1110,18 +1162,18 @@
                                 min-width: 5em;
                                 border-radius: 0.8em;
                             }
-
+                            
                             &lt;form id="login-form" class="form-el"&gt;
-                                &lt;h2 class="centered"&gt;Увійти як Адміністратор&lt;/h2&gt;
-                                &lt;br&gt;
-                                &lt;label for="password"&gt;Пароль&lt;/label&gt;
-                                &lt;input
-                                type="password"
-                                id="password"
-                                name="password"
-                                placeholder="Введіть пароль"
-                                /&gt;
-                                &lt;button id="submit__login"&gt;Увійти&lt;/button&gt;
+                            &lt;h2 class="centered"&gt;Увійти як Адміністратор&lt;/h2&gt;
+                            &lt;br&gt;
+                            &lt;label for="password"&gt;Пароль&lt;/label&gt;
+                            &lt;input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Введіть пароль"
+                            /&gt;
+                            &lt;button id="submit__login"&gt;Увійти&lt;/button&gt;
                             &lt;/form&gt;
                         </pre>
                         <form id="login-form" class="form-el">
@@ -1144,6 +1196,261 @@
                             використовуючи селектори тегів, класів, ідентифікаторів. Також було додано шрифти, стилізацію тексту, таблиць, фону, контурів,
                             списів.
                         </p>
+                    </span> 
+                </span>
+                <span id="content-lab3">
+                    <span id="theme3" class="theme lab1 info-element hidden">
+                        <h2 class="centered">Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА
+                            ЗАСОБАМИ CSS та FLEXBOX.</h2>
+                        
+                        <p>Мета: ⎯ придбати практичні навички роботи верстки сторінок засобами CSS, верстки на
+                            основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-
+                            сторінок
+                            ⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX</p>
+            
+                        <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
+                    </span>
+                    <span id="task1" class="task1 lab3  info-element hidden">
+                        <pre>
+                        &lt;header&gt;
+                            &lt;nav&gt;
+                                &lt;ul class="navbar"&gt;
+                                 ...
+                                &lt;/ul&gt;
+                                &lt;div class="navbar-placeholder"&gt;&lt;/div&gt;
+                            &lt;/nav&gt;
+                        &lt;/header&gt;
+                        &lt;main&gt;
+                            &lt;section&gt;
+                                ...
+                            &lt;/section&gt;
+                            &lt;section&gt;
+                                ...
+                            &lt;/section&gt;
+                            &lt;section&gt;
+                            ...
+                            &lt;/section&gt;
+                            &lt;section&gt;
+                                ...
+                            &lt;/section&gt;
+                        &lt;/main&gt;
+                        &lt;footer id="contact"&gt;
+                            ...
+                        &lt;/footer&gt;
+                        </pre>
+                        <img class="main-page-img" src="./main-page.png">
+                        <img class="main-page-img" src="./main-page2.png">
+                        
+                    </span>
+                    <span id="task2_1" class="fixed-table lab3 info-element hidden">
+                        <pre>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Фіксована таблична верстка&lt;/title&gt;
+                                    &lt;style&gt;
+                                        *{
+                                            margin: 0;
+                                            padding: 0;
+                                            border: 0;
+                                            border-spacing: 0;
+                                        }
+                                        td{
+                                            border: solid 2px black;
+                                        }
+
+                                        #header, #footer-row, #footer-cell{
+                                            height: 150px;
+                                            background-color: yellow;
+                                        }
+                                        #header-section, #page,  #header, #footer-row, #footer-cell{
+                                            width: 1519px;
+                                        }
+                                        #main{
+                                            height: 1100px;
+                                        }
+                                        #left-block{
+                                            height: 1100px;
+                                            background-color: blue;
+                                            width: 350px;
+                                        }
+                                        #elem34-section{
+                                            width: 1169px;
+                                        }
+                                        #inner-table{
+                                            margin: 20px;
+                                            width: 1129px;
+                                            height: 1070px;
+                                            border-spacing: 30px;
+                                        }
+
+                                        #red-block{
+                                            background-color: red;
+                                            height: 150px;
+                                        }
+
+                                        #block3, #block4{
+                                            border: solid rgb(215, 214, 214) 2px;
+                                        }
+
+                                        #block4{
+                                            background-color: blue;
+                                        }
+
+                                        #header-white-cell{
+                                            background-color: white;
+                                            width: 450px;
+                                            height: 65px;
+                                        }
+                                        #header-inner-table{
+                                            margin-left: 20px;
+                                        }
+                                    &lt;/style&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table id="page"&gt;
+                                        &lt;tr id="header"&gt;
+                                            &lt;td colspan="2" id="header-section"&gt;
+                                                &lt;table id="header-inner-table"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td id="header-white-cell"&gt;
+
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/table&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr id="main"&gt;
+                                            &lt;td id="left-block"&gt;
+
+                                            &lt;/td&gt;
+                                            &lt;td id="elem34-section"&gt;
+                                                &lt;table id="inner-table"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td colspan="2" id="red-block"&gt;
+
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td id="block3"&gt;
+
+                                                        &lt;/td&gt;
+                                                        &lt;td id="block4"&gt;
+
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/table&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr id="footer-row" &gt;
+                                            &lt;td colspan="2" id="footer-cell"&gt;
+                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>                        
+                        <img src="./fixed_table.png" width="100%"> 
+                    </span>                               
+                    <span id="task2_2" class="flexible-table lab1 info-element hidden">
+                        <pre>
+                            &lt;form id="login-form" class="form hidden"&gt;
+                            &lt;h2 class="centered"&gt;Увійти як Адміністратор&lt;/h2&gt;
+                            &lt;br&gt;
+                            &lt;label for="password"&gt;Пароль&lt;/label&gt;
+                            &lt;input type="password" id="password" name="password"
+                            placeholder="Введіть пароль"
+                            /&gt;
+                            &lt;button id="submit__login"&gt;Увійти&lt;/button&gt;
+                            &lt;/form&gt;
+                        </pre>                        
+                        <form id="login-form" class="form-el">
+                            <h2 class="centered">Увійти як Адміністратор</h2>
+                            <br>
+                            <label for="password">Пароль</label>
+                            <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Введіть пароль"
+                            />
+                            <button id="submit__login">Увійти</button>
+                        </form>
+                    </span>
+                    <span id="list" class="list lab1 info-element hidden">
+                        <pre>
+                            &lt;ol id="squad-list"&gt;
+                                &lt;li&gt;Player 1&lt;/li&gt;
+                                &lt;li&gt;Player 2&lt;/li&gt;
+                                &lt;li&gt;Player 3&lt;/li&gt;
+                                &lt;li&gt;Player 4&lt;/li&gt;
+                                &lt;li&gt;Player 5&lt;/li&gt;
+                                &lt;li&gt;Player 6&lt;/li&gt;
+                                &lt;li&gt;Player 7&lt;/li&gt;
+                                &lt;li&gt;Player 8&lt;/li&gt;
+                                &lt;li&gt;Player 9&lt;/li&gt;
+                                &lt;li&gt;Player 10&lt;/li&gt;
+                                &lt;li&gt;Player 11&lt;/li&gt;
+                                &lt;li&gt;Player 12&lt;/li&gt;
+                                &lt;li&gt;Player 13&lt;/li&gt;
+                                &lt;li&gt;Player 14&lt;/li&gt;
+                                &lt;li&gt;Player 15&lt;/li&gt;
+                                &lt;li&gt;Player 16&lt;/li&gt;
+                                &lt;li&gt;Player 17&lt;/li&gt;
+                                &lt;li&gt;Player 18&lt;/li&gt;
+                                &lt;li&gt;Player 19&lt;/li&gt;
+                                &lt;li&gt;Player 20&lt;/li&gt;
+                            &lt;/ol&gt; 
+                        </pre>                        
+                        <ol id="squad-list">
+                            <li>Player 1</li>
+                            <li>Player 2</li>
+                            <li>Player 3</li>
+                            <li>Player 4</li>
+                            <li>Player 5</li>
+                            <li>Player 6</li>
+                            <li>Player 7</li>
+                            <li>Player 8</li>
+                            <li>Player 9</li>
+                            <li>Player 10</li>
+                            <li>Player 11</li>
+                            <li>Player 12</li>
+                            <li>Player 13</li>
+                            <li>Player 14</li>
+                            <li>Player 15</li>
+                            <li>Player 16</li>
+                            <li>Player 17</li>
+                            <li>Player 18</li>
+                            <li>Player 19</li>
+                            <li>Player 20</li>
+                        </ol>  
+            
+                    </span>  
+                    <span id="link" class="link lab1 info-element hidden">
+                        <pre>
+                            &lt;a id="log-in" href="#"&gt;Я Адміністратор&lt;/a&gt;
+                            &lt;li class="nav-item"&gt;&lt;a href="#"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="nav-item"&gt;&lt;a href="#league-table"&gt;Таблиця&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="nav-item"&gt;&lt;a href="#photo-div"&gt;Фото&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="nav-item"&gt;&lt;a href="#squad"&gt;Склад&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="nav-item"&gt;&lt;a href="#contact"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+                            &lt;a href="descriptionTask1.html" target="_blank"&gt;Опис предметної галузі&lt;/a&gt;
+                        </pre>                      
+                        <a id="log-in" href="#">Я Адміністратор</a>  
+                        <li class="nav-item"><a href="#">Головна</a></li>
+                        <li class="nav-item"><a href="#league-table">Таблиця</a></li>
+                        <li class="nav-item"><a href="#photo-div">Фото</a></li>
+                        <li class="nav-item"><a href="#squad">Склад</a></li>
+                        <li class="nav-item"><a href="#contact">Контакти</a></li>
+                        <a href="descriptionTask1.html" target="_blank">Опис предметної галузі</a>
+                    </span>                       
+                    <span id="conclusion" class="conclusion lab1 info-element hidden">
+                    <h2 class="center">Висновки</h2>
+                    <p>
+                        У ході третьої лабораторної роботи було придбано практичні навички роботи верстки сторінок засобами CSS, верстки на
+                        основі плаваючих елементів, з’ясовано переваги та недоліки типів макетів веб-сторінок а також засвоєно верстку сторінок засобами CSS та FLEXBOX
+                    </p>
                     </span> 
                 </span>
             </span>

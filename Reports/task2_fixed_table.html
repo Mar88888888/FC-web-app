@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Фіксована таблична верстка</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                border-spacing: 0;
+            }
+            td{
+                border: solid 2px black;
+            }
+
+            #header, #footer-row, #footer-cell{
+                height: 150px;
+                background-color: yellow;
+            }
+            #header-section, #page,  #header, #footer-row, #footer-cell{
+                width: 1519px;
+            }
+            #main{
+                height: 1100px;
+            }
+            #left-block{
+                height: 1100px;
+                background-color: blue;
+                width: 350px;
+            }
+            #elem34-section{
+                width: 1169px;
+            }
+            #inner-table{
+                margin: 20px;
+                width: 1129px;
+                height: 1070px;
+                border-spacing: 30px;
+            }
+
+            #red-block{
+                background-color: red;
+                height: 150px;
+            }
+
+            #block3, #block4{
+                border: solid rgb(215, 214, 214) 2px;
+            }
+
+            #block4{
+                background-color: blue;
+            }
+
+            #header-white-cell{
+                background-color: white;
+                width: 450px;
+                height: 65px;
+            }
+            #header-inner-table{
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="page">
+            <tr id="header">
+                <td colspan="2" id="header-section">
+                    <table id="header-inner-table">
+                        <tr>
+                            <td id="header-white-cell">
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="main">
+                <td id="left-block">
+
+                </td>
+                <td id="elem34-section">
+                    <table id="inner-table">
+                        <tr>
+                            <td colspan="2" id="red-block">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="block3">
+
+                            </td>
+                            <td id="block4">
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="footer-row" >
+                <td colspan="2" id="footer-cell">
+    
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
