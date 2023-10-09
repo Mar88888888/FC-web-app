@@ -16,6 +16,10 @@ header{
     line-height: 2.5em;
 }
 
+a{
+    cursor: pointer;
+}
+
 h1{
     font-size: 54px;
     font-weight: bold;
@@ -59,6 +63,7 @@ section{
     background-color: rgb(252, 183, 54);
     -webkit-box-shadow: 3px 7px 30px 5px rgba(0,0,0,0.43); 
     box-shadow: 3px 7px 30px 5px rgba(0,0,0,0.43);
+    cursor: default;
 }
 
 .heading{
@@ -129,6 +134,7 @@ section{
     bottom: 0;
     margin-top: auto;
     width: 100%;
+    max-height: 30%;
 }
 
 
@@ -187,6 +193,10 @@ footer img{
     width: 220px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+#social-container a{
+    cursor: pointer;
 }
 
 #year{

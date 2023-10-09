@@ -65,6 +65,11 @@ a{
     width: 70%;
     margin-right: 1%;
     border: 2px solid black;
+    text-wrap:wrap
+}
+
+pre{
+    text-wrap: wrap;
 }
 
 .menu-btn, .menu-no-click{
