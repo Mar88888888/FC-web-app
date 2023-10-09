@@ -55,6 +55,11 @@ section{
     list-style: disc;
     list-style-position: inside;
 }
+#advantages-list li:hover{
+    background-color: rgb(252, 183, 54);
+    -webkit-box-shadow: 3px 7px 30px 5px rgba(0,0,0,0.43); 
+    box-shadow: 3px 7px 30px 5px rgba(0,0,0,0.43);
+}
 
 .heading{
     display: inline-block;
