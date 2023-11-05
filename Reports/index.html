@@ -215,6 +215,60 @@
                         </a>
                     </li>
                 </ul>
+                <ul id="menu-lab4" class="menu-lab hidden" lab="4">
+                    <li>
+                        <a href="#" class="theme lab4 menu-btn">              
+                            Тема Мета Місце розташування лаби №4, звіту
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop lab4 menu-btn">              
+                            Медіазапит для десктопної версії
+                        </a>
+                    </li>                   
+                    <li>
+                        <a href="#" class="pad lab4 menu-btn">              
+                            Медіазапит для планшетної версії
+                        </a>
+                    </li>                   
+                    <li>
+                        <a href="#" class="mobile lab4 menu-btn">              
+                            Медіазапит для мобільної версії
+                        </a>
+                    </li>
+                    <li>
+                        <p class="menu-no-click" item = "" lab="4">              
+                            Приклади використання логічних операторів
+                        </p>
+                        <ul lab="4">
+                            <li>
+                                <a href="#" class="and lab4 menu-btn">              
+                                   AND
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="not lab4 menu-btn">              
+                                    NOT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="only lab4 menu-btn">              
+                                    ONLY
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="or lab4 menu-btn">              
+                                    OR
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="conclusion lab4 menu-btn">              
+                            Висновки
+                        </a>
+                    </li>
+                </ul>
             </span>
 
 
@@ -2149,8 +2203,316 @@
                     </p>
                     </span> 
                 </span>
+                <span id="content-lab4">
+                    <span id="theme" class="theme lab4 info-element hidden">
+                        <h2 class="centered">Тема: АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.
+                            СТРАТЕГІЯ MOBILE FIRST.</h2>
+                        
+                        <p>Мета: Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег
+                            viewport. Інструменти розробника. Стратегія Mobile First.</p>
+
+                        <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
+                    </span>
+                    <span id="desktop" class="desktop lab4  info-element hidden">
+                        <pre>
+                            @media all and (not (print)) and (min-width: 981px) {
+                                #logo{
+                                    height: 120px;
+                                    float: left;
+                                }
+                            
+                                #log-in{
+                                    float: right;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                    width: 23%;
+                                    text-wrap: wrap;
+                                }
+                            
+                                #nav-div{
+                                    display: inline-block;
+                                    width: 50%;
+                                    margin-left: 10%;
+                                }
+                            
+                                li.nav-item {
+                                    display: inline-block;
+                                    max-width: 200px;
+                                }
+                            
+                                li.nav-item a {
+                                    display: block;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                }
+                            
+                                #photo-div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            
+                                .match-photo {
+                                    width: 100%;
+                                    display: inline;
+                                    margin-top: 5px;
+                                }
+                            
+                                #squad-list {
+                                    margin-top: 20px;
+                                    width: 100%;
+                                }
+                            
+                                #contact-container {
+                                    width: 100%;
+                                }
+                            }
+                        </pre>
+                        <img src="desktop.png" width="100%">
+                    </span>
+                    <span id="pad" class="pad lab4 info-element hidden">
+                        <pre>
+                            @media (min-width: 500px) and (max-width: 980px) {
+                                body {
+                                    font-size: 32px;
+                                    line-height: 36px;
+                                }
+                            
+                                h1, h2, h3 {
+                                    margin-top: 20px;
+                                }
+                            
+                                .navbar-placeholder {
+                                    height: 160px;
+                                }
+                            
+                                ul.navbar {
+                                    list-style-type: none;
+                                    margin: 0;
+                                    padding: 0;
+                                    background-color: #303134;
+                                    position: fixed;
+                                    width: 100%;
+                                    text-align: center;
+                                    min-height: 150px;
+                                }
+                            
+                                #logo{
+                                    height: 120px;
+                                    float: left;
+                                }
+                            
+                                #log-in{
+                                    float: right;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                    width: 23%;
+                                    text-wrap: wrap;
+                                }
+                            
+                                #nav-div{
+                                    display: inline-block;
+                                    width: 50%;
+                                    margin-left: 10%;
+                                }
+                            
+                                li.nav-item {
+                                    display: inline-block;
+                                    max-width: 200px;
+                                }
+                            
+                                li.nav-item a {
+                                    display: block;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                }
+                            
+                                #photo-div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            
+                                .match-photo {
+                                    width: 100%;
+                                    display: inline;
+                                    margin-top: 5px;
+                                }
+                            
+                                #squad-list {
+                                    margin-top: 20px;
+                                    width: 100%;
+                                }
+                            
+                                #contact-container {
+                                    width: 100%;
+                                }
+                            
+                                .material-symbols-outlined {
+                                    font-size: 50px;
+                                    transform: scale(2);
+                                }
+                            }
+                        </pre>
+                        <img src="pad.png" width="100%">
+                    </span>                               
+                    <span id="mobile" class="mobile lab4 info-element hidden">
+                        <pre>
+                            @media screen and (max-width: 499px) {
+                                ul.navbar {
+                                    list-style-type: none;
+                                    margin: 0;
+                                    padding: 0;
+                                    background-color: #303134;
+                                    position: fixed;
+                                    width: 100%;
+                                    text-align: center;
+                                    height: 80px;
+                                }
+                                .navbar-placeholder {
+                                    height: 160px;
+                                }
+                                #logo{
+                                    height: 120px;
+                                    float: left;
+                                }
+                            
+                                #log-in{
+                                    float: right;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                    width: 23%;
+                                    text-wrap: wrap;
+                                }
+                            
+                                #nav-div{
+                                    display: inline-block;
+                                    width: 50%;
+                                    margin-left: 10%;
+                                }
+                            
+                                li.nav-item {
+                                    display: inline-block;
+                                    max-width: 200px;
+                                }
+                            
+                                li.nav-item a {
+                                    display: block;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                }
+                            
+                                #photo-div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            
+                                .match-photo {
+                                    width: 100%;
+                                    display: inline;
+                                    margin-top: 5px;
+                                }
+                            
+                                #squad-list {
+                                    margin-top: 20px;
+                                    width: 100%;
+                                }
+                            
+                                #contact-container {
+                                    width: 100%;
+                                }
+                            }
+                        </pre>
+                        <img src="mobile.png" width="100%">
+                    </span>
+                    <span id="not" class="not lab4 info-element hidden">
+                        <p>
+                            Тег not використовується, щоб не включати певні види пристроїв у медіа-запит, працює як логічний оператор NOT (!)
+                        </p>
+                        <pre>
+                            @media all and (not (print)) and (min-width: 981px) {
+                                #logo{
+                                    height: 120px;
+                                    float: left;
+                                }
+                                ...
+                            }
+                            
+                        </pre>
+
+                    </span>  
+                    <span id="only" class="only lab4 info-element hidden">
+                        <p>
+                            Тег only використовується, щоб виокремити тільки певні види пристроїв у медіа-запиті, 
+                        </p>
+                        <pre>
+                            @media only screen and (min-width: 981px) {
+                                #logo{
+                                    height: 120px;
+                                    float: left;
+                                }
+                                ...
+                            }
+                            
+                        </pre>
+                    </span>                       
+                    <span id="and" class="and lab4 info-element hidden">
+                        <pre>
+                            <p>
+            Тег and використовується, щоб додати умови, за якими присвоюються стилі медіа-запиту, працює як логічний оператор AND (&&)
+                            </p>
+                            <pre>
+                                @media all and (not (print)) and (min-width: 981px) {
+                                    #logo{
+                                        height: 120px;
+                                        float: left;
+                                    }
+                                    ...
+                                }
+                                
+                            </pre>
+                        </pre>
+                    </span>                       
+                    <span id="or" class="or lab4 info-element hidden">
+                        <pre>
+                            <p>
+    Тег "," використовується, щоб додати умови, за якими присвоюються стилі медіа-запиту, працює як логічний оператор OR (||)
+                            </p>
+                            <pre>
+                                @media screen and ((min-width: 981px), (max-width: 500px)) {
+                                    #logo{
+                                        height: 120px;
+                                        float: left;
+                                    }
+                                    ...
+                                }
+                                
+                            </pre>
+                        </pre>
+                    </span>                       
+                    <span id="conclusion" class="conclusion lab1 info-element hidden">
+                        <h2 class="center">Висновки</h2>
+                        <p>
+                            У ході першої лабораторної роботи було засвоєно навички адаптивної верстки html сторінки,
+                            використовуючи медіазапити та Медіа-функції. Також було створено версію веб застосунку адаптовану до планшетів та
+                            мобільних пристроїв.
+                        </p>
+                    </span> 
+                </span>
             </span>
-            
             
         </section>
         <script src="script.js">
