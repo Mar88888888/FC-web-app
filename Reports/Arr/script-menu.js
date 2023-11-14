@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     let menuItems = [
-        { label: "Головна", link: "home.html" },
+        { label: "Головна", link: "index-menu.html" },
         {
             label: "Склад",
             subItems: [
-                { label: "Основний склад", link: "page1.html" },
-                { label: "Травмовані", link: "page2.html" }
+                { label: "Основний склад", link: "main-squad.html" },
+                { label: "Травмовані", link: "injured.html" }
             ]
         },
         {
             label: "Персонал",
             subItems: [
-                { label: "Тренерський штаб", link: "page3.html" },
-                { label: "Мед-персонал клубу", link: "page4.html" }
+                { label: "Тренерський штаб", link: "coach-staff.html" },
+                { label: "Мед-персонал клубу", link: "medical-staff.html" }
             ]
         }
     ];

@@ -269,11 +269,61 @@
                         </a>
                     </li>
                 </ul>
+                <ul id="menu-lab5" class="menu-lab hidden" lab="5">
+                    <li>
+                        <a href="#" class="theme lab5 menu-btn">              
+                            Тема Мета Місце розташування лаби №5, звіту
+                        </a>
+                    </li>
+                    <li>
+                        <p class="menu-no-click" item = "" lab="5">              
+                            Засоби функціонального застосування javascript
+                        </p>
+                        <ul lab="5">
+                            <li>
+                                <a href="#" class="url lab5 menu-btn">              
+                                   Схема URL 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="event lab5 menu-btn">              
+                                    Обробник подій
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="entity lab5 menu-btn">              
+                                    Підстановка (entity)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="script lab5 menu-btn">              
+                                    Вставка (тег SCRIPT)
+                                </a>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="#" class="arrays lab5 menu-btn">              
+                                МАСИВИ (4 пункт)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="task6 lab5 menu-btn">              
+                                Виконання 6 пункту
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <a href="#" class="conclusion lab4 menu-btn">              
+                            Висновки
+                        </a>
+                    </li>
+                </ul>
             </span>
 
 
             <span id="information-span">
                 <span id="content-lab1">
+
                     <span id="description" class="description lab1 info-element hidden">
                         <h1 class="centered">Опис предметної галузі</h1>
                         <h2 class="centered">Веб сайт футбольного клубу</h2>
@@ -288,7 +338,7 @@
                         зображеннями, посиланнями, списками, формами
                         Створити шаблон звітного HTML-документом для відображення
                         результатів роботи всіх лабораторних робіт.</p>
-
+    
                         <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
                     </span>
                     <span id="table" class="table lab1  info-element hidden">
@@ -350,7 +400,7 @@
                                 &lt;/tr&gt;  
                                 &lt;/table&gt;
                         </pre>
-
+    
                         <table >
                             <tr class="table-header">
                                 <th class="position">Місце</th>
@@ -424,7 +474,7 @@
                             <img class="match-photo" src="./fc2.jpg">
                             <img class="match-photo" src="./fc3.jpg">
                         </span>
-
+    
                     </span>                               
                     <span id="form" class="form lab1 info-element hidden">
                         <pre>
@@ -498,7 +548,7 @@
                             <li>Player 19</li>
                             <li>Player 20</li>
                         </ol>  
-
+    
                     </span>  
                     <span id="link" class="link lab1 info-element hidden">
                         <pre>
@@ -2509,6 +2559,528 @@
                             У ході 4-ї лабораторної роботи було засвоєно навички адаптивної верстки html сторінки,
                             використовуючи медіазапити та Медіа-функції. Також було створено версію веб застосунку адаптовану до планшетів та
                             мобільних пристроїв.
+                        </p>
+                    </span> 
+                </span>
+                <span id="content-lab5">
+
+                    <span id="theme" class="theme lab5 info-element hidden">
+                        <h2 class="centered">Тема: ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ.
+                            ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ
+                            ЗАСОВАМИ МОВИ JAVASCRIPT</h2>
+                        
+                        <p>Мета: придбати практичні навички роботи з масивами у js-сценаріях.
+                            Реалізація програм засовами мови JAVASCRIPT.</p>
+
+                        <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
+                    </span>
+                    <span id="url" class="url lab5  info-element hidden">
+                        <p>
+                            JavaScript використовується
+                            для роботи з URL-адресами, зокрема отримання параметрів з URL,
+                             редиректів, або зміни URL без перезавантаження сторінки.
+                        </p>
+                        <pre>
+                            const urlParams = new URLSearchParams(window.location.search);
+                            const userId = urlParams.get('user_id');
+                        </pre>
+                    </span>
+                    <span id="event" class="event lab5 info-element hidden">
+                        <p>
+                            JavaScript використовується для обробки подій, таких 
+                            як клік, подвійний клік, 
+                            натискання клавіш, тощо. 
+                            Це дозволяє реагувати на дії користувача або на інші події в середовищі виконання.
+                        </p>
+                        <pre>
+                            <a id="log-in" href="#">Я Адміністратор</a>
+
+                            let loginBtn = document.querySelector('#log-in');
+                    
+                            loginBtn.addEventListener('click', function(e){
+                                e.preventDefault;
+                                form.classList.toggle('hidden');
+                                overlay.classList.toggle('hidden');
+                            })
+                        </pre>
+                    </span>                               
+                    <span id="entity" class="entity lab5 info-element hidden">
+                        <p>
+                            JavaScript може використовуватися для зміни або підстановки даних в документ,
+                             таких як текстові дані чи атрибути елементів.
+                        </p>
+                        <pre>
+                            <div id="output"></div>
+                            let output = document.querySelector('#output')
+
+                            let outputStr = `Вхідний масив: [${array.join(', ')}];\n
+                            Сума елементів з парним індексом: ${evenSum};\n
+                            Найбільший елемент: ${maxEl}\n
+                            Його індекс: ${maxElIndex}\n
+                            Найменший елемент з непарним індексом: ${minEl}\n
+                            Його індекс: ${minElIndex}\n
+                            Відсортований за зростанням масив: [${sortedArr.join(', ')}]\n`
+                            output.textContent = outputStr;
+                        </pre>
+                    </span>
+                    <span id="script" class="script lab5 info-element hidden">
+                        <pre>
+                            JavaScript може вставлятися в HTML-документи за допомогою тегу 
+                        &lt;script&gt;. Це дозволяє виконувати скрипти безпосередньо на сторінці.
+                        &lt;script&gt;
+                            function myFunction() {
+                                alert('Hello, World!');
+                            }
+                            myFunction();
+                        &lt;/script&gt;
+
+
+                            Імпорт зовнішнього js файлу також виконується за допомогою тегу script:
+                            &lt;script src="script.js"&gt;&lt;/script&gt;
+                        </pre>
+                    </span>  
+                    <span id="arrays" class="arrays lab5 info-element hidden">
+                       <pre>
+                            <h2>HTML + CSS:</h2>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Lab5_Arrays&lt;/title&gt;
+                                    &lt;style&gt;
+                                        #submit-btn{
+                                            display: inline-block;
+                                            padding: 10px;
+                                            background-color: rgba(0, 0, 255, 0.604);
+                                            color: white;
+                                            text-decoration: none;
+                                            border: solid 0;
+                                            border-radius: 10px;
+                                        }
+
+                                        #length-input{
+                                            height: 2em;
+                                            margin: 5px;
+                                        }
+
+                                        #output{
+                                            max-width: 50%;
+                                            min-height: 300px;
+                                            text-wrap: wrap;
+                                            border: solid black 2px;
+                                            margin-top: 5em;
+                                            margin: auto;
+                                            padding: 10px;
+                                            white-space: pre-line;
+                                        }
+
+                                        #input-container{
+                                            text-align: center;
+                                        }
+                                    &lt;/style&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;header&gt;
+
+                                    &lt;/header&gt;
+                                    &lt;main&gt;
+                                        &lt;div id="input-container"&gt;
+                                            &lt;h1&gt;Введіть довжину масиву&lt;/h1&gt;
+                                            &lt;input type="text" id="length-input"&gt;
+                                            &lt;a id="submit-btn" href="#"&gt;Підтвердити&lt;/a&gt;
+                                        &lt;/div&gt;
+                                        &lt;div id="output"&gt;&lt;/div&gt;
+                                    &lt;/main&gt;
+                                    &lt;footer&gt;
+
+                                    &lt;/footer&gt;
+                                    &lt;script src="./script.js"&gt;&lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+
+                            <h2>JS:</h2>
+
+                            let input = document.querySelector('#length-input');
+                            let btn = document.querySelector('#submit-btn');
+                            let output = document.querySelector('#output')
+
+                            function createArr(num){
+                                let arr = [];
+                                for(let i = 0; i &lt; num; i++){
+                                    arr.push(Math.round(Math.random()*100));
+                                }
+                                return arr;
+                            }
+
+                            function insertSort(array){
+                                    let arr = [...array];
+                                    let n = arr.length;
+                                
+                                    for (let i = 1; i &lt; n; i++) {
+                                    let current = arr[i];
+                                    let j = i - 1;
+                                
+                                    while (j >= 0 && arr[j] > current) {
+                                        arr[j + 1] = arr[j];
+                                        j--;
+                                    }
+                                
+                                    arr[j + 1] = current;
+                                    }
+                                    
+                                    return arr;      
+                            }
+
+                            btn.addEventListener('click', function(){
+                                let length = Number(input.value);
+                                if(typeof length === 'number' && length > 0){
+                                    try{
+                                        let array = createArr(length);
+                                        let evenSum = 0;
+                                        let maxEl = -Infinity;
+                                        let maxElIndex, minElIndex;
+                                        let minEl = Infinity;
+                                        ;
+                                        
+                                        for (let i = 0; i &lt; array.length; i++) {
+                                            
+                                            if (array[i] > maxEl) {
+                                                maxEl = array[i];
+                                                maxElIndex = i;
+                                            }
+                                            if (i % 2 === 0) {
+                                                evenSum += array[i];
+                                            } else {
+                                                if (array[i] &lt; minEl) {
+                                                    minEl = array[i];
+                                                    minElIndex = i;
+                                                }
+                                            }
+                                        }
+                                        let sortedArr = insertSort(array);
+
+                                        let outputStr = `Вхідний масив: [${array.join(', ')}];\n
+                                        Сума елементів з парним індексом: ${evenSum};\n
+                                        Найбільший елемент: ${maxEl}\n
+                                        Його індекс: ${maxElIndex}\n
+                                        Найменший елемент з непарним індексом: ${minEl}\n
+                                        Його індекс: ${minElIndex}\n
+                                        Відсортований за зростанням масив: [${sortedArr.join(', ')}]\n`
+                                        output.textContent = outputStr;
+                                    }catch(e){
+                                        alert(e.message)
+                                    }
+                                }else alert('Invalid input');
+                            })
+
+                        </pre>
+                        <img src="./Arr/array.png" width="100%">
+                    </span>                       
+                    <span id="task6" class="task6 lab5 info-element hidden">
+                        <a href="#css-part">CSS</a>
+                        <a href="#js-part">JS</a>
+                        <a href="#screenshot-part">Screenshot</a>
+                        <pre>
+                            <h2>HTML:</h2>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                            &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;title&gt;Football Club Coaching Staff&lt;/title&gt;
+                                &lt;link rel="stylesheet" href="style.css"&gt;
+                                &lt;link rel="stylesheet" href="style-menu.css"&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
+                                &lt;header&gt;
+                                    &lt;div id="menu" class="menu"&gt;
+                                    &lt;/div&gt;
+                                    
+                                    &lt;h1&gt;Тренерський штаб футбольного клубу&lt;/h1&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+
+                                    &lt;section&gt;
+                                        &lt;h2&gt;Тренери&lt;/h2&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;Джон Доу - головний тренер&lt;/li&gt;
+                                            &lt;li&gt;Джейн Сміт - помічник тренера&lt;/li&gt;
+                                            &lt;li&gt;Майк Джонсон – тренер воротарів&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/section&gt;
+                                    
+                                    &lt;section&gt;
+                                        &lt;h2&gt;Допоміжний персонал&lt;/h2&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;Сара Вільямс – фізіотерапевт&lt;/li&gt;
+                                            &lt;li&gt;Том Браун – фітнес-тренер&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/section&gt;
+                                &lt;/main&gt;
+                                    
+                                    &lt;script src="script-menu.js"&gt;&lt;/script&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+
+
+
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="uk"&gt;
+                            &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;Медичний персонал футбольного клубу&lt;/title&gt;
+                                &lt;link rel="stylesheet" href="style.css"&gt;
+                                &lt;link rel="stylesheet" href="style-menu.css"&gt;
+
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
+                                &lt;header&gt;
+                                    &lt;div id="menu" class="menu"&gt;
+                                    &lt;/div&gt;
+                                    &lt;h1&gt;Медичний персонал футбольного клубу&lt;/h1&gt;
+                                &lt;/header&gt;
+                            &lt;main&gt;
+
+                                &lt;section&gt;
+                                    &lt;h2&gt;Медична команда&lt;/h2&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;Доктор Емілі Браун - Головний лікар&lt;/li&gt;
+                                        &lt;li&gt;Фізіотерапевт: Сара Вільямс&lt;/li&gt;
+                                        &lt;li&gt;Фізичний терапевт: Джеймс Кларк&lt;/li&gt;
+                                        &lt;li&gt;Спортивний дієтолог: Олекс Тернер&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/section&gt;
+                            &lt;/main&gt;
+                                &lt;script src="script-menu.js"&gt;&lt;/script&gt;
+
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+
+
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="uk"&gt;
+                            &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;Основний склад футбольного клубу&lt;/title&gt;
+                                &lt;link rel="stylesheet" href="style.css"&gt;
+                                &lt;link rel="stylesheet" href="style-menu.css"&gt;
+
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
+                                &lt;header&gt;
+                                    &lt;div id="menu" class="menu"&gt;
+                                    &lt;/div&gt;
+                                    &lt;h1&gt;Основний склад футбольного клубу&lt;/h1&gt;
+                                &lt;/header&gt;
+                            &lt;main&gt;
+
+                                &lt;section&gt;
+                                    &lt;h2&gt;Головна Команда&lt;/h2&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;Капітан: Іван Петров&lt;/li&gt;
+                                        &lt;li&gt;Нападник: Олександр Іванов&lt;/li&gt;
+                                        &lt;li&gt;Півзахисник: Михайло Сидоров&lt;/li&gt;
+                                        &lt;li&gt;Захисник: Андрій Коваленко&lt;/li&gt;
+                                        &lt;li&gt;Воротар: Віталій Мельник&lt;/li&gt;
+                                        &lt;li&gt;Півзахисник: Тарас Шевченко&lt;/li&gt;
+                                        &lt;li&gt;Захисник: Юрій Онопко&lt;/li&gt;
+                                        &lt;li&gt;Нападник: Денис Лисенко&lt;/li&gt;
+                                        &lt;li&gt;Півзахисник: Тарас Ковальчук&lt;/li&gt;
+                                        &lt;li&gt;Захисник: Сергій Ігнатенко&lt;/li&gt;
+                                        &lt;li&gt;Нападник: Сергій Литвин&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/section&gt;
+                            &lt;/main&gt;
+                                &lt;script src="script-menu.js"&gt;&lt;/script&gt;
+                                
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="uk"&gt;
+                            &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;Травмовані гравці футбольного клубу&lt;/title&gt;
+                                &lt;link rel="stylesheet" href="style.css"&gt;
+                                &lt;link rel="stylesheet" href="style-menu.css"&gt;
+
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
+                                &lt;header&gt;
+                                    &lt;div id="menu" class="menu"&gt;
+                                    &lt;/div&gt;
+                                    &lt;h1&gt;Травмовані гравці футбольного клубу&lt;/h1&gt;
+                                &lt;/header&gt;
+                            &lt;main&gt;
+
+                                &lt;section&gt;
+                                    &lt;h2&gt;Травмований Склад&lt;/h2&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;Ігор Лисенко - Зламана нога&lt;/li&gt;
+                                        &lt;li&gt;Павло Сидоров - Звідтягнення м'язів&lt;/li&gt;
+                                        &lt;li&gt;Павло Ігнатов - Травма гомілки&lt;/li&gt;
+                                        &lt;li&gt;Олексій Ковальчук - Пошкодження коліна&lt;/li&gt;
+                                        &lt;li&gt;Олексій Петров - Вивих плеча&lt;/li&gt;
+                                        &lt;li&gt;Володимир Коваленко - Травма гомілки&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/section&gt;
+                            &lt;/main&gt;
+                                &lt;script src="script-menu.js"&gt;&lt;/script&gt;
+                                
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+
+                            <h2 id="css-part">CSS:</h2>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    background-color: #f4f4f4;
+                                    margin: 0;
+                                    padding: 0;
+                                    text-align: center;
+                                }
+                                
+                                section {
+                                    margin: 20px;
+                                }
+                                
+                                ul {
+                                    list-style-type: none;
+                                    padding: 0;
+                                }
+                                
+                                main li {
+                                    background-color: #fff;
+                                    border: 1px solid #ddd;
+                                    margin: 5px;
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                    display: inline-block;
+                                    width: 150px;
+                                    line-height: 1.5em;
+                                    height: 70px;
+                                    vertical-align: middle;
+                                }
+
+
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                
+                                .menu {
+                                    background-color: #333;
+                                }
+                                
+                                .menu ul {
+                                    list-style: none;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                
+                                .menu ul li {
+                                    display: inline-block;
+                                    position: relative;
+                                }
+                                
+                                .menu a {
+                                    display: block;
+                                    padding: 15px 20px;
+                                    color: #fff;
+                                    text-decoration: none;
+                                }
+                                
+                                .menu ul ul {
+                                    display: none;
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0;
+                                    background-color: #555;
+                                }
+                                
+                                .menu ul li:hover > ul {
+                                    display: inherit;
+                                }
+                                
+                                .menu ul ul li {
+                                    width: 200px;
+                                    float: none;
+                                    display: list-item;
+                                    position: relative;
+                                }
+                                
+                                .menu ul ul li:hover {
+                                    background-color: #383838;
+                                }
+                                
+                            
+                            
+                            
+                            
+                            <h2 id="js-part">JS:</h2>
+
+                            ocument.addEventListener("DOMContentLoaded", function() {
+                                let menuItems = [
+                                    { label: "Головна", link: "index-menu.html" },
+                                    {
+                                        label: "Склад",
+                                        subItems: [
+                                            { label: "Основний склад", link: "main-squad.html" },
+                                            { label: "Травмовані", link: "injured.html" }
+                                        ]
+                                    },
+                                    {
+                                        label: "Персонал",
+                                        subItems: [
+                                            { label: "Тренерський штаб", link: "coach-staff.html" },
+                                            { label: "Мед-персонал клубу", link: "medical-staff.html" }
+                                        ]
+                                    }
+                                ];
+                            
+                                let menuElement = document.getElementById("menu");
+                                menuElement.appendChild(generateMenu(menuItems));
+                            });
+                            
+                            function generateMenu(menuItems) {
+                                let ul = document.createElement("ul");
+                            
+                                menuItems.forEach(function(item) {
+                                    let li = document.createElement("li");
+                                    let a = document.createElement("a");
+                                    a.href = item.link || "#";
+                                    a.textContent = item.label;
+                            
+                                    li.appendChild(a);
+                            
+                                    if (item.subItems) {
+                                        li.appendChild(generateMenu(item.subItems));
+                                    }
+                            
+                                    ul.appendChild(li);
+                                });
+                            
+                                return ul;
+                            }
+                       </pre>
+                       <div id="screenshot-part">
+                        <img src="./Arr/menu1.png" width="100%">
+                       <img src="Arr/menu2.png" width="100%">
+                       <img src="./Arr/menu3.png" width="100%">
+                       </div>
+                       <a href="#">Нагору</a>
+                    </span>                       
+                    <span id="conclusion" class="conclusion lab5 info-element hidden">
+                        <h2 class="center">Висновки</h2>
+                        <p>
+                            У ході п'ятої лабораторної роботи було засвоєно релізацію програм засобами мови JavaScript.
+                            За допомогою застосування масивів та обробників подій було створено декілька елементів веб-застосунку,
+                            що полегшують використання продукту.
                         </p>
                     </span> 
                 </span>
