@@ -313,7 +313,46 @@
                         </li>
                     </li>
                     <li>
-                        <a href="#" class="conclusion lab4 menu-btn">              
+                        <a href="#" class="conclusion lab5 menu-btn">              
+                            Висновки
+                        </a>
+                    </li>
+                </ul>
+                <ul id="menu-lab6" class="menu-lab hidden" lab="6">
+                    <li>
+                        <a href="#" class="theme lab6 menu-btn">              
+                            Тема Мета Місце розташування лаби №6, звіту
+                        </a>
+                    </li>
+                    <li>
+                        <p class="menu-no-click" item = "" lab="6">              
+                            Виконання завдань
+                        </p>
+                        <ul lab="6">
+                            <li>
+                                <a href="#" class="task2 lab6 menu-btn">              
+                                   Завдання 2 
+                                </a>
+                                <a href="#" class="task4 lab6 menu-btn">              
+                                   Завдання 4 
+                                </a>
+                                <a href="#" class="task6 lab6 menu-btn">              
+                                   Завдання 6 
+                                </a>
+                                <a href="#" class="task8 lab6 menu-btn">              
+                                   Завдання 8 
+                                </a>
+                                <a href="#" class="task9 lab6 menu-btn">              
+                                   Завдання 9 
+                                </a>
+                                <a href="#" class="task10 lab6 menu-btn">              
+                                   Завдання 10 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="conclusion lab6 menu-btn">              
                             Висновки
                         </a>
                     </li>
@@ -3081,6 +3120,252 @@
                             У ході п'ятої лабораторної роботи було засвоєно релізацію програм засобами мови JavaScript.
                             За допомогою застосування масивів та обробників подій було створено декілька елементів веб-застосунку,
                             що полегшують використання продукту.
+                        </p>
+                    </span> 
+                </span>
+                <span id="content-lab6">
+                    
+                    <span id="theme" class="theme lab6 info-element hidden">
+                        <h2 class="centered">Тема: ОБ&#39;ЄКТ. МЕТОДИ ОБ&#39;ЄКТА. МАСИВ ОБ&#39;ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ
+                            ОБ&#39;ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК
+                            КОЛБЕКИ​.</h2>
+                        
+                        <p>Мета: придбати практичні навички роботи з об&#39;єктами. Методи об&#39;єкта.
+                            Callback. Стрілочні функції. Стрілочні функції як колбеки ​ .
+                            Реалізація програм засовами мови JAVASCRIPT</p>
+
+                        <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
+                    </span>                     
+                    <span id="task2" class="task2 lab6 info-element hidden">
+                        <img src="./lab6/task2.png" width="100%">
+                        <h2>JS код:</h2>
+                        <pre>
+                            let dbProductEmul = [
+                                {
+                                    id: 0,
+                                    price: 150,
+                                    name: "glass",
+                                    weight: 0.5,
+                                },
+                                {
+                                    id: 1,
+                                    price: 15,
+                                    name: "Banana",
+                                    weight: 0.2,
+                                },
+                                {
+                                    id: 2,
+                                    price: 1500,
+                                    name: "Boots",
+                                    weight: 1,
+                                },
+                                {
+                                    id: 3,
+                                    price: 500,
+                                    name: "USB stick",
+                                    weight: 0.1,
+                                },
+                                {
+                                    id: 4,
+                                    price: 100,
+                                    name: "Shorts",
+                                    weight: 0.3,
+                                },
+                            ];
+
+                            function getProductDetails(productId, successCallback, errorCallback){
+                                try{
+                                    productId = Number(productId);
+                                    if(isNaN(productId)){
+                                        throw new Error('Product id must be a number')
+                                    }
+                                    let product = dbProductEmul.find(prod=> prod.id === productId);
+                                    if(product === undefined){
+                                        throw new Error('Product not found');
+                                    }
+                                    successCallback(product);
+                                }catch(err){
+                                    errorCallback(err.message);
+                                }
+                            }
+
+                            let id = Number(prompt('Input product Id', ));
+
+                            getProductDetails(id, product=> console.log(...(Object.values(product))), msg => alert(msg));
+                        </pre>
+                        <h2>Результат виконання (у prompt на productId було введено значення 1):</h2>
+                        <img src="./lab6/task2Completed.png"  width="100%">
+                    </span> 
+                    <span id="task4" class="task4 lab6 info-element hidden">
+                        <img src="./lab6/task4.png" width="100%">
+                        <h2>JS код:</h2>
+                        <pre>
+                            const concerts = {
+                                'Київ': new Date('2020-04-01'),
+                                'Умань': new Date('2025-07-02'),
+                                'Вінниця': new Date('2020-04-21'),
+                                'Одеса': new Date('2025-03-15'),
+                                'Хмельницький': new Date('2020-04-18'),
+                                'Харків': new Date('2025-07-10'),
+                            };
+                            
+                            function getUpToDateConcerts(concertsObj){
+                                return Object.keys(concertsObj)
+                                .filter(city => concertsObj[city] > new Date())
+                                .sort((city1, city2) =>{
+                                    if (concertsObj[city1] < concertsObj[city2]) {
+                                        return -1;
+                                    }
+                                    if (concertsObj[city1] > concertsObj[city2]) {
+                                        return 1;
+                                    }
+                            
+                                    return 0;
+                                });
+                            }
+                            
+                            console.log(getUpToDateConcerts(concerts));
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab6/task4Completed.png"  width="100%">
+                    </span> 
+                    <span id="task6" class="task6 lab6 info-element hidden">
+                        <img src="./lab6/task6.png" width="100%">
+                        <h2>JS код:</h2>
+                        <pre>
+                            const medicines = [
+                                { name:'Noshpa', price: 170 },
+                                { name: 'Analgin', price: 55 },
+                                { name: 'Quanil', price: 310 },
+                                { name: 'Alphacholine', price: 390 },
+                            ];
+
+                            function updateMedicines(arr){
+                                let id = 0;
+                                return arr.map((medicine)=>{
+                                    medicine.id = id;
+                                    id++;
+                                    if(medicine.price > 300){
+                                        medicine.price *= 0.7;
+                                    }
+                                    return medicine;
+                                })
+                            }
+
+                            console.log(updateMedicines(medicines));
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab6/task6Completed.png"  width="100%">
+                    </span> 
+                    <span id="task8" class="task8 lab6 info-element hidden">
+                        <img src="./lab6/task8.png" width="100%" >
+                        <h2>JS код:</h2>
+                        <pre>
+                            function Storage(initialItems) {
+                                this.items = initialItems || [];
+                              
+                                this.getItems = function() {
+                                  return this.items;
+                                };
+                              
+                                this.addItems = function(item) {
+                                  this.items.push(item);
+                                };
+                              
+                                this.removeItem = function(item) {
+                                  const index = this.items.indexOf(item);
+                                  if (index !== -1) {
+                                    this.items.splice(index, 1);
+                                  }
+                                };
+                              }
+                              
+                              const arr = ['apple', 'banana', 'mango'];
+                              const storage = new Storage(arr);
+                              
+                              console.log("Initial items:", ...storage.getItems()); 
+                              
+                              storage.addItems('orange');
+                              console.log("After adding 'orange':", ...storage.getItems());
+                              
+                              storage.removeItem('banana');
+                              console.log("After removing 'banana':", ...storage.getItems());
+                              
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab6/task8Completed.png"  width="100%">
+                    </span> 
+                    <span id="task9" class="task9 lab6 info-element hidden">
+                        <img src="./lab6/task9.png" width="100%">
+                        <h2>JS код:</h2>
+                        <pre>
+                            const tweets = [
+                                { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+                                { id: '001', likes: 2, tags: ["html", "css"] },
+                                { id: '002', likes: 17, tags: ["html", "js", "nodejs"] },
+                                { id: '003', likes: 8, tags: ["css", "react"] },
+                                { id: '004', likes: 0, tags: ["js", "nodejs", "react"] },
+                            ];
+                            
+                            function tagCounter(obj){
+                                obj.forEach(tweet => {
+                                    tweet.tags.forEach(tag => {
+                                        if(this[tag] === undefined){
+                                            this[tag] = 1;
+                                        }else{
+                                            this[tag]++;
+                                        }
+                                    })
+                                })
+                            }
+                            
+                            let counter = new tagCounter(tweets);
+                            
+                            console.log('Counter: ', counter);
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab6/task9Completed.png" width="100%">
+                    </span> 
+                    <span id="task10" class="task10 lab6 info-element hidden">
+                        <img src="./lab6/task10.png" width="100%">
+                        <h2>JS код:</h2>
+                        <pre>
+                            function checkBrackets(someFn) {
+                                const stack = [];
+                                const openingBrackets = ['(', '{', '['];
+                                const closingBrackets = [')', }, ']'];
+                              
+                                for (let char of someFn) {
+                                  if (openingBrackets.includes(char)) {
+                                    stack.push(char);
+                                  } else if (closingBrackets.includes(char)) {
+                                    const lastOpeningBracket = stack.pop();
+                                    const expectedOpeningBracket = openingBrackets[closingBrackets.indexOf(char)];
+                              
+                                    if (lastOpeningBracket !== expectedOpeningBracket) {
+                                      return false;
+                                    }
+                                  }
+                                }
+                              
+                                return stack.length === 0;
+                              }
+                            
+                              const code1 = "function someFn() { if (true) { return 'Hello'; } }";
+                              const code2 = "function anotherFn() { if (false) { return 'World'; }";
+                              
+                              console.log(code1, checkBrackets(code1));
+                              console.log(code2, checkBrackets(code2));
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab6/task10Completed.png" width="100%">
+                    </span> 
+                    <span id="conclusion" class="conclusion lab6 info-element hidden">
+                        <h2 class="center">Висновки</h2>
+                        <p>
+                            У ході шостої лабораторної роботи було засвоєно релізацію програм засобами мови JavaScript.
+                            На практичних задачах було відпрацьовано практичні навички роботи з об&#39;єктами, методами об&#39;єкта,
+                            сallback- та стрілочними функцями.
                         </p>
                     </span> 
                 </span>
