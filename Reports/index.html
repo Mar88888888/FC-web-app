@@ -357,6 +357,45 @@
                         </a>
                     </li>
                 </ul>
+                <ul id="menu-lab7" class="menu-lab hidden" lab="7">
+                    <li>
+                        <a href="#" class="theme lab7 menu-btn">              
+                            Тема Мета Місце розташування лаби №7, звіту
+                        </a>
+                    </li>
+                    <li>
+                        <p class="menu-no-click" item = "" lab="7">              
+                            Виконання завдань
+                        </p>
+                        <ul lab="7">
+                            <li>
+                                <a href="#" class="task2 lab7 menu-btn">              
+                                   Завдання 2 
+                                </a>
+                                <a href="#" class="task4 lab7 menu-btn">              
+                                   Завдання 4 
+                                </a>
+                                <a href="#" class="task6 lab7 menu-btn">              
+                                   Завдання 6 
+                                </a>
+                                <a href="#" class="task8 lab7 menu-btn">              
+                                   Завдання 8 
+                                </a>
+                                <a href="#" class="task9 lab7 menu-btn">              
+                                   Завдання 9 
+                                </a>
+                                <a href="#" class="task10 lab7 menu-btn">              
+                                   Завдання 10 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="conclusion lab7 menu-btn">              
+                            Висновки
+                        </a>
+                    </li>
+                </ul>
             </span>
 
 
@@ -3366,6 +3405,276 @@
                             У ході шостої лабораторної роботи було засвоєно релізацію програм засобами мови JavaScript.
                             На практичних задачах було відпрацьовано практичні навички роботи з об&#39;єктами, методами об&#39;єкта,
                             сallback- та стрілочними функцями.
+                        </p>
+                    </span> 
+                </span>
+                <span id="content-lab7">
+                    
+                    <span id="theme" class="theme lab6 info-element hidden">
+                        <h2 class="centered">Тема: КЛАСИ. ОБ&#39;ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ&#39;ЄКТ ПОДІЇ.
+                            ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. МОДУЛЬНОСТЬ КОДУ</h2>
+                        
+                        <p>Мета: придбати практичні навички роботи з об&#39;єктами. Методи об&#39;єкта..
+                            Callback. Стрілочні функції. Стрілочні функції як колбеки​.
+                            Реалізація програм засовами мови JAVASCRIPT</p>
+
+                        <p><a href="https://github.com/Mar88888888/FC-web-app.git" target="_blank">Посилання на репозиторій з проектом</a></p>
+                    </span>                     
+                    <span id="task2" class="task2 lab7 info-element hidden">
+                        <img src="./lab7/task2.png" width="50%">
+                        
+                        <h2>HTML:</h2>
+                        <pre>
+                            &lt;div&gt;
+                                &lt;h2&gt;Завдання 2&lt;/h2&gt;
+                            
+                                &lt;input type="text" id="input1" placeholder="Input 1"&gt;
+                                &lt;input type="text" id="input2" placeholder="Input 2"&gt;
+                                &lt;button id="swapBtn"&gt;SWAP ME&lt;/button&gt;
+                            &lt;/div&gt;
+                        </pre>
+                        <h2>JS код:</h2>
+                        <pre>
+                            let input1 = document.getElementById('input1');
+                            let input2 = document.getElementById('input2');
+                            let swapBtn = document.getElementById('swapBtn');
+                            function swapInputs() {
+                                [input1.value, input2.value] = [input2.value, input1.value];
+                            }
+                            swapBtn.addEventListener('click', swapInputs);
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab7/task2Completed.png"  width="50%">
+                        <img src="./lab7/task2Completed2.png"  width="50%">
+                    </span> 
+                    <span id="task4" class="task4 lab7 info-element hidden">
+                        <img src="./lab7/task4.png" width="50%">
+                        <h2>HTML CSS:</h2>
+                        <pre>
+                            &lt;div&gt;
+                                &lt;h2&gt;Завдання 4&lt;/h2&gt;
+                            
+                                &lt;button id="decreaseBtn"&gt;Зменшити&lt;/button&gt;
+                                &lt;button id="increaseBtn"&gt;Збільшити&lt;/button&gt;
+                                &lt;div id="square"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        </pre>
+                        <h2>JS код:</h2>
+                        <pre>
+                            let square = document.getElementById('square');
+                            let increase = document.getElementById('increaseBtn');
+                            let decrease = document.getElementById('decreaseBtn');
+                    
+                            function decreaseSize() {
+                                let currentSize = parseInt(window.getComputedStyle(square).width);
+                                let newSize = currentSize - 15;
+                                square.style.width = newSize + 'px';
+                                square.style.height = newSize + 'px';
+                            }
+                    
+                            function increaseSize() {
+                                let currentSize = parseInt(window.getComputedStyle(square).width);
+                                let newSize = currentSize + 15;
+                                square.style.width = newSize + 'px';
+                                square.style.height = newSize + 'px';
+                            }
+                    
+                            decrease.addEventListener('click', decreaseSize);
+                            increase.addEventListener('click', increaseSize);
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab7/task4Completed.png"  width="50%">
+                        <img src="./lab7/task4Completed2.png"  width="50%">
+                    </span> 
+                    <span id="task6" class="task6 lab7 info-element hidden">
+                        <img src="./lab7/task6.png" width="50%">
+                        <h2>HTML:</h2>
+                        <pre>
+                            &lt;div&gt;
+                                &lt;h2&gt;Завдання 6&lt;/h2&gt;
+                        
+                                &lt;ul id="myList"&gt;
+                                    &lt;li&gt;1&lt;/li&gt;
+                                    &lt;li&gt;2&lt;/li&gt;
+                                    &lt;li&gt;3&lt;/li&gt;
+                                    &lt;li&gt;31&lt;/li&gt;
+                                    &lt;li&gt;3322&lt;/li&gt;
+                                    &lt;li&gt;223&lt;/li&gt;
+                                    &lt;li&gt;3234&lt;/li&gt;
+                                &lt;/ul&gt;
+                            
+                                &lt;button id="doubleBtn"&gt;Подвоїти&lt;/button&gt;
+                            &lt;/div&gt;
+                        </pre>
+                        <h2>JS код:</h2>
+                        <pre>
+                            let listItems = document.getElementById('myList').getElementsByTagName('li');
+                            let doubleBtn = document.getElementById('doubleBtn');
+                            function doubleValues() {
+                                for (let i = 0; i < listItems.length; i++) {
+                                    let currentValue = parseInt(listItems[i].innerText);
+                                    listItems[i].innerText = currentValue * 2;
+                                }
+                            }
+                            doubleBtn.addEventListener('click', doubleValues);
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab7/task6Completed.png"  width="30%">
+                        <img src="./lab7/task6Completed2.png"  width="30%">
+                        <img src="./lab7/task6Completed3.png"  width="40%">
+                    </span> 
+                    <span id="task8" class="task8 lab7 info-element hidden">
+                        <img src="./lab7/task8.png" width="50%" >
+                        <h2>HTML:</h2>
+                        <pre>
+                            &lt;div&gt;
+                                &lt;h2&gt;Завдання 8&lt;/h2&gt;
+                                &lt;form class="login-form"&gt;
+                                    &lt;label&gt;
+                                        Email
+                                        &lt;input type="email" name="email" autocomplete="off" /&gt;
+                                    &lt;/label&gt;
+                                    &lt;label&gt;
+                                        Password
+                                        &lt;input type="password" name="password" /&gt;
+                                    &lt;/label&gt;
+                                    &lt;button type="submit"&gt;Log in&lt;/button&gt;
+                                &lt;/form&gt;
+                            &lt;/div&gt;
+                        </pre>
+                        <h2>JS код:</h2>
+                        <pre>
+                            let form = document.querySelector('.login-form');
+        
+                            function submitForm(event) {
+                                event.preventDefault();
+                                
+                                
+                                let email = form.elements.email.value.trim();
+                                let password = form.elements.password.value.trim();
+                                if (email === '' || password === '') {
+                                    alert('All form fields must be filled in');
+                                    return;
+                                }
+                    
+                                let formData = {
+                                    email: email,
+                                    password: password
+                                };
+                    
+                                console.log(formData);
+                    
+                                form.reset();
+                            }
+                    
+                            form.addEventListener('submit', submitForm);
+                    
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab7/task8Completed.png"  width="50%">
+                        <img src="./lab7/task8Completed2.png"  width="50%">
+                    </span> 
+                    <span id="task9" class="task9 lab7 info-element hidden">
+                        <img src="./lab7/task9.png" width="50%">
+                        <h2>HTML CSS:</h2>
+                        <pre>
+                            body {
+                                transition: background-color 1.5s ease; 
+                            }
+                            &lt;div class="widget"&gt;
+                                &lt;h2&gt;Завдання 9&lt;/h2&gt;
+                                &lt;p&gt;Background color: &lt;span class="color"&gt;-&lt;/span&gt;&lt;/p&gt;
+                                &lt;button type="button" class="change-color"&gt;Change color&lt;/button&gt;
+                            &lt;/div&gt;
+                        </pre>
+                        <h2>JS код:</h2>
+                        <pre>
+                            let btnColor = document.querySelector('.change-color');
+                            function getRandomHexColor() {
+                                return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+                            }
+                    
+                            function changeBackgroundColor() {
+                                const newColor = getRandomHexColor();
+                    
+                                const bodyElement = document.body;
+                                const colorSpan = document.querySelector('.color');
+                    
+                                bodyElement.style.backgroundColor = newColor;
+                    
+                                colorSpan.textContent = newColor;
+                            }
+                            btnColor.addEventListener('click', changeBackgroundColor);
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab7/task9Completed.png" width="30%">
+                        <img src="./lab7/task9Completed2.png" width="30%">
+                        <img src="./lab7/task9Completed3.png" width="40%">
+                    </span> 
+                    <span id="task10" class="task10 lab7 info-element hidden">
+                        <img src="./lab7/task10.png" width="50%">
+                        <img src="./lab7/task10_2.png" width="50%">
+                        <h2>HTML CSS:</h2>
+                        <pre>
+                            #boxes div {
+                                width: 30px;
+                                height: 30px;
+                                margin: 5px;
+                            }
+                            &lt;div id="controls"&gt;
+                                &lt;h2&gt;Завдання 10&lt;/h2&gt;
+                                &lt;input type="number" min="1" max="100" step="1" id="amountInput" /&gt;
+                                &lt;button type="button" class="create"&gt;Create&lt;/button&gt;
+                                &lt;button type="button" class="destroy"&gt;Destroy&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div id="boxes"&gt;&lt;/div&gt;
+                        </pre>
+                        <h2>JS код:</h2>
+                        <pre>
+                            let amountInput = document.querySelector('#amountInput');
+                            let boxesContainer = document.getElementById('boxes');
+                            let btnCreate = document.querySelector('.create');
+                            let btnDestroy = document.querySelector('.destroy');
+                            function getRandomHexColor() {
+                                return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+                            }
+                    
+                            function createBoxes() {
+                                const amount = parseInt(amountInput.value);
+                                amountInput.value = '';
+                                if (isNaN(amount) || amount < 1 || amount > 100) {
+                                    alert("Please enter a valid number between 1 and 100.");
+                                    return;
+                                }
+                    
+                                destroyBoxes();
+                    
+                                for (let i = 0; i < amount; i++) {
+                                    let box = document.createElement('div');
+                                    box.style.width = `${30 + i * 10}px`;
+                                    box.style.height = `${30 + i * 10}px`;
+                                    box.style.backgroundColor = getRandomHexColor();
+                                    boxesContainer.appendChild(box);
+                                }
+                            }
+                    
+                            function destroyBoxes() {
+                            boxesContainer.innerHTML = '';
+                            }
+                    
+                            btnCreate.addEventListener('click', createBoxes);
+                            btnDestroy.addEventListener('click', destroyBoxes);
+                        </pre>
+                        <h2>Результат виконання:</h2>
+                        <img src="./lab7/task10Completed.png" width="50%">
+                        <img src="./lab7/task10Completed2.png" width="50%">
+                    </span> 
+                    <span id="conclusion" class="conclusion lab6 info-element hidden">
+                        <h2 class="center">Висновки</h2>
+                        <p>
+                            У ході сьомої лабораторної роботи було засвоєно та відпрацьовано практичні навички роботи з
+                             об&#39;єктами, методами об&#39;єкта. Було реалізовано завдання лабораторної роботи 
+                             засовами мови JAVASCRIPT
                         </p>
                     </span> 
                 </span>

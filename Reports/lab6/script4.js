@@ -1,15 +1,18 @@
-function Storage(initialItems) {
-    this.items = initialItems || [];
+class Storage {
+    #items;
+    constructor(initialItems){
+      this.items = initialItems || [];
+    } 
   
-    this.getItems = function() {
+    getItems = function() {
       return this.items;
     };
   
-    this.addItems = function(item) {
+    addItems = function(item) {
       this.items.push(item);
     };
   
-    this.removeItem = function(item) {
+    removeItem = function(item) {
       const index = this.items.indexOf(item);
       if (index !== -1) {
         this.items.splice(index, 1);

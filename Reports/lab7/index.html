@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7</title>
+    <style>
+        #square {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(80, 80, 218);
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        body {
+            transition: background-color 1.5s ease; 
+        }
+        #boxes div {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+</header>
+<main>
+    <div>
+        <h2>Завдання 2</h2>
+    
+        <input type="text" id="input1" placeholder="Input 1">
+        <input type="text" id="input2" placeholder="Input 2">
+        <button id="swapBtn">SWAP ME</button>
+    </div>
+    <div>
+        <h2>Завдання 4</h2>
+    
+        <button id="decreaseBtn">Зменшити</button>
+        <button id="increaseBtn">Збільшити</button>
+        <div id="square"></div>
+    </div>
+    <div>
+        <h2>Завдання 6</h2>
+
+        <ul id="myList">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>31</li>
+            <li>3322</li>
+            <li>223</li>
+            <li>3234</li>
+        </ul>
+    
+        <button id="doubleBtn">Подвоїти</button>
+    </div>
+    <div>
+        <h2>Завдання 8</h2>
+        <form class="login-form">
+            <label>
+                Email
+                <input type="email" name="email" autocomplete="off" />
+            </label>
+            <label>
+                Password
+                <input type="password" name="password" />
+            </label>
+            <button type="submit">Log in</button>
+        </form>
+    </div>
+    <div class="widget">
+        <h2>Завдання 9</h2>
+        <p>Background color: <span class="color">-</span></p>
+        <button type="button" class="change-color">Change color</button>
+      </div>
+    <div id="controls">
+        <h2>Завдання 10</h2>
+        <input type="number" min="1" max="100" step="1" id="amountInput" />
+        <button type="button" class="create">Create</button>
+        <button type="button" class="destroy">Destroy</button>
+    </div>
+    <div id="boxes"></div>
+
+    </main>
+
+    <script>
+        // 2
+        let input1 = document.getElementById('input1');
+        let input2 = document.getElementById('input2');
+        let swapBtn = document.getElementById('swapBtn');
+        function swapInputs() {
+            [input1.value, input2.value] = [input2.value, input1.value];
+        }
+        swapBtn.addEventListener('click', swapInputs);
+        
+        // 4
+        let square = document.getElementById('square');
+        let increase = document.getElementById('increaseBtn');
+        let decrease = document.getElementById('decreaseBtn');
+
+        function decreaseSize() {
+            let currentSize = parseInt(window.getComputedStyle(square).width);
+            let newSize = currentSize - 15;
+            square.style.width = newSize + 'px';
+            square.style.height = newSize + 'px';
+        }
+
+        function increaseSize() {
+            let currentSize = parseInt(window.getComputedStyle(square).width);
+            let newSize = currentSize + 15;
+            square.style.width = newSize + 'px';
+            square.style.height = newSize + 'px';
+        }
+
+        decrease.addEventListener('click', decreaseSize);
+        increase.addEventListener('click', increaseSize);
+
+        // 6
+        let listItems = document.getElementById('myList').getElementsByTagName('li');
+        let doubleBtn = document.getElementById('doubleBtn');
+        function doubleValues() {
+            for (let i = 0; i < listItems.length; i++) {
+                let currentValue = parseInt(listItems[i].innerText);
+                listItems[i].innerText = currentValue * 2;
+            }
+        }
+        doubleBtn.addEventListener('click', doubleValues);
+
+        // 8
+        let form = document.querySelector('.login-form');
+        
+        function submitForm(event) {
+            event.preventDefault();
+            
+            
+            let email = form.elements.email.value.trim();
+            let password = form.elements.password.value.trim();
+            if (email === '' || password === '') {
+                alert('All form fields must be filled in');
+                return;
+            }
+
+            let formData = {
+                email: email,
+                password: password
+            };
+
+            console.log(formData);
+
+            form.reset();
+        }
+
+        form.addEventListener('submit', submitForm);
+
+        // 9
+        let btnColor = document.querySelector('.change-color');
+        function getRandomHexColor() {
+            return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+        }
+
+        function changeBackgroundColor() {
+            const newColor = getRandomHexColor();
+
+            const bodyElement = document.body;
+            const colorSpan = document.querySelector('.color');
+
+            bodyElement.style.backgroundColor = newColor;
+
+            colorSpan.textContent = newColor;
+        }
+        btnColor.addEventListener('click', changeBackgroundColor);
+
+        // 10
+        let amountInput = document.querySelector('#amountInput');
+        let boxesContainer = document.getElementById('boxes');
+        let btnCreate = document.querySelector('.create');
+        let btnDestroy = document.querySelector('.destroy');
+        function getRandomHexColor() {
+            return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+        }
+
+        function createBoxes() {
+            const amount = parseInt(amountInput.value);
+            amountInput.value = '';
+            if (isNaN(amount) || amount < 1 || amount > 100) {
+                alert("Please enter a valid number between 1 and 100.");
+                return;
+            }
+
+            destroyBoxes();
+
+            for (let i = 0; i < amount; i++) {
+                let box = document.createElement('div');
+                box.style.width = `${30 + i * 10}px`;
+                box.style.height = `${30 + i * 10}px`;
+                box.style.backgroundColor = getRandomHexColor();
+                boxesContainer.appendChild(box);
+            }
+        }
+
+        function destroyBoxes() {
+        boxesContainer.innerHTML = '';
+        }
+
+        btnCreate.addEventListener('click', createBoxes);
+        btnDestroy.addEventListener('click', destroyBoxes);
+    </script>
+
+</body>
+</html>
