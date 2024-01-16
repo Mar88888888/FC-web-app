@@ -208,13 +208,13 @@
         let form = document.querySelector('#login-form');
         let overlay = document.querySelector('#blur');
 
-        loginBtn.addEventListener('click', function(e){
+        loginBtn.addEventListener('click', e =>{
             e.preventDefault;
             form.classList.toggle('hidden');
             overlay.classList.toggle('hidden');
         })
 
-        overlay.addEventListener('click', function(e){
+        overlay.addEventListener('click', e => {
             form.classList.toggle('hidden');
             overlay.classList.toggle('hidden');
         })
